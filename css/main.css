@@ -13,20 +13,132 @@ html {
 
 .Grass {
   position: absolute;
-  top: 60rem;
+  top: 50rem;
   bottom: 0;
-  width: 90%;
+  width: 450px;
+  height: 240px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-perspective: 1000;
           perspective: 1000;
-  background-color: red;
 }
 
 .Grass__part-1 {
+  width: 90%;
+  height: 12.3rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: rotateX(69deg) translateX(-50%);
+          transform: rotateX(69deg) translateX(-50%);
+  border-radius: 50%;
   background-color: #6ba33e;
+}
+
+.Grass__part-11 {
+  width: 60%;
+  height: 12rem;
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  -webkit-transform: rotateX(69deg) translateX(-50%);
+          transform: rotateX(69deg) translateX(-50%);
+  border-radius: 50%;
+  background-color: #6ba33e;
+}
+
+.Grass__part-1-11-curvature-left {
+  position: absolute;
+  width: 6rem;
+  height: 1.1rem;
+  background-color: #a6d15e;
+  border-radius: 50%;
+  top: 7.8rem;
+  left: 8rem;
+  -webkit-transform: rotateX(13deg) rotateY(-3deg);
+          transform: rotateX(13deg) rotateY(-3deg);
+  z-index: 0;
+}
+
+.Grass__part-1-11-curvature-center {
+  position: absolute;
+  width: 46%;
+  height: 5rem;
+  background-color: #6ba33e;
+  top: 23%;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  z-index: -1;
+}
+
+.Grass__part-1-11-curvature-right {
+  position: absolute;
+  width: 6rem;
+  height: 1.1rem;
+  background-color: #a6d15e;
+  border-radius: 50%;
+  top: 32.2%;
+  right: 17%;
+  -webkit-transform: rotateX(13deg) rotateY(4deg);
+          transform: rotateX(13deg) rotateY(4deg);
+  z-index: 0;
+}
+
+.Grass__part-2 {
+  width: 95%;
+  height: 12rem;
+  position: absolute;
+  left: 50%;
+  top: 2.5%;
+  -webkit-transform: rotateX(60deg) translateX(-50%);
+          transform: rotateX(60deg) translateX(-50%);
+  border-radius: 50%;
+  background-color: #a6d15e;
+  z-index: -5;
+}
+
+.Grass__part-22 {
+  width: 67%;
+  height: 13rem;
+  position: absolute;
+  top: 4.5rem;
+  left: 50%;
+  -webkit-transform: rotateX(75deg) rotateY(-1deg) translateX(-50%) translateY(-14px);
+          transform: rotateX(75deg) rotateY(-1deg) translateX(-50%) translateY(-14px);
+  border-radius: 50%;
+  background-color: #a6d15e;
+  z-index: -1;
+}
+
+.Grass__part-32 {
+  position: absolute;
+  width: 42%;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #a6d15e;
+  top: 47%;
+  right: 10%;
+  -webkit-transform: rotateZ(-5deg) translateX(-15px);
+      -ms-transform: rotate(-5deg) translateX(-15px);
+          transform: rotateZ(-5deg) translateX(-15px);
+  z-index: -1;
+}
+
+.Grass__part-33 {
+  position: absolute;
+  width: 32%;
+  height: 2.5rem;
+  background-color: #a6d15e;
+  border-radius: 50%;
+  top: 43%;
+  right: 10%;
+  -webkit-transform: rotateZ(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotateZ(-5deg);
+  z-index: -1;
 }
 
 .Home {
