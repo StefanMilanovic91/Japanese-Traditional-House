@@ -7,6 +7,8 @@
     left: 50%
     transform: translateX(-50%)
     perspective: 1000
+    @include size(md)
+        width: 750px
     &__part-1
         width: 90%
         height: 12.3rem
@@ -34,6 +36,8 @@
         left: 8rem
         transform: rotateX(13deg) rotateY(-3deg)
         z-index: 0
+        @include size(md)
+            left: 16rem
     &__part-1-11-curvature-center
         position: absolute
         width: 46%
@@ -50,9 +54,11 @@
         background-color: #a6d15e
         border-radius: 50%
         top: 32.2%
-        right: 17%
+        right: 7.9rem
         transform: rotateX(13deg) rotateY(4deg)
         z-index: 0
+        @include size(md)
+            right: 16rem
     &__part-2
         width: 95%
         height: 12rem

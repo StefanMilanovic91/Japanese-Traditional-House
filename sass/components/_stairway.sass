@@ -1,0 +1,58 @@
+.Stairway
+    position: absolute
+    width: 18rem
+    top: 52rem
+    height: 4rem
+    left: 36.5rem
+    transform: translateX(-50%)
+    z-index: 1
+    @include size(md)
+        width: 21rem 
+    &__first-row
+        position: absolute
+        width: 100%
+        height: 2rem
+        top: 1.8rem
+        background: rgb(189,190,192)
+        background: linear-gradient(180deg, rgba(189,190,192,1) 0%, rgba(157,153,152,1) 100%)
+        display: flex
+        justify-content: space-around
+        padding-left: 1rem
+        padding-right: 1rem
+        z-index: 1
+        &:after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 3px
+            background-color: rgb(208, 209, 211) 
+    &__second-row
+        position: absolute
+        width: 80%
+        height: 1.8rem
+        left: 50%
+        transform: translateX(-50%)
+        background: rgb(179,184,188)
+        background: linear-gradient(180deg, rgba(179,184,188,1) 45%, rgba(125,126,130,1) 100%)
+        display: flex
+        justify-content: space-around
+        padding-left: .3rem
+        padding-right: .3rem
+        z-index: 2
+        &:after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 3px
+            background-color: rgb(208, 209, 211) 
+        .Stairway__bricks
+            height: 1.8rem
+    &__bricks
+        height: 2rem
+        width: .3rem
+        background-color: darken(rgb(147, 148, 152), 10%) 
+        

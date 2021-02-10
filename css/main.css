@@ -25,6 +25,12 @@ html {
           perspective: 1000;
 }
 
+@media screen and (min-width: 768px) {
+  .Grass {
+    width: 750px;
+  }
+}
+
 .Grass__part-1 {
   width: 90%;
   height: 12.3rem;
@@ -61,6 +67,12 @@ html {
   z-index: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .Grass__part-1-11-curvature-left {
+    left: 16rem;
+  }
+}
+
 .Grass__part-1-11-curvature-center {
   position: absolute;
   width: 46%;
@@ -81,10 +93,16 @@ html {
   background-color: #a6d15e;
   border-radius: 50%;
   top: 32.2%;
-  right: 17%;
+  right: 7.9rem;
   -webkit-transform: rotateX(13deg) rotateY(4deg);
           transform: rotateX(13deg) rotateY(4deg);
   z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .Grass__part-1-11-curvature-right {
+    right: 16rem;
+  }
 }
 
 .Grass__part-2 {
@@ -141,10 +159,192 @@ html {
   z-index: -1;
 }
 
-.Home {
+.Stairway {
+  position: absolute;
+  width: 18rem;
+  top: 52rem;
+  height: 4rem;
+  left: 36.5rem;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .Stairway {
+    width: 21rem;
+  }
+}
+
+.Stairway__first-row {
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  top: 1.8rem;
+  background: #bdbec0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bdbec0), to(#9d9998));
+  background: -o-linear-gradient(top, #bdbec0 0%, #9d9998 100%);
+  background: linear-gradient(180deg, #bdbec0 0%, #9d9998 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 1;
+}
+
+.Stairway__first-row:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #d0d1d3;
+}
+
+.Stairway__second-row {
+  position: absolute;
+  width: 80%;
+  height: 1.8rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #b3b8bc;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, #b3b8bc), to(#7d7e82));
+  background: -o-linear-gradient(top, #b3b8bc 45%, #7d7e82 100%);
+  background: linear-gradient(180deg, #b3b8bc 45%, #7d7e82 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: .3rem;
+  padding-right: .3rem;
+  z-index: 2;
+}
+
+.Stairway__second-row:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #d0d1d3;
+}
+
+.Stairway__second-row .Stairway__bricks {
+  height: 1.8rem;
+}
+
+.Stairway__bricks {
+  height: 2rem;
+  width: .3rem;
+  background-color: #797a7f;
+}
+
+.Foundation {
+  position: absolute;
+  width: 35rem;
+  height: 3rem;
+  top: 52rem;
+  left: 52%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+.Foundation__floor {
+  position: absolute;
+  width: 37rem;
+  height: .7rem;
+  left: -1rem;
+  background-color: #82470f;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.Foundation__plate {
+  position: absolute;
+  width: 100%;
+  height: 1.7rem;
+  top: .7rem;
+  background-color: #74410a;
+}
+
+.Foundation__plate:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: .5rem;
+  top: 0;
+  left: 0;
+  background-color: #422e09;
+}
+
+.Foundation__pedestal-1 {
+  position: absolute;
+  width: 2rem;
+  height: 1.1rem;
+  top: 2.4rem;
+  left: 1rem;
+  background-color: #633001;
+}
+
+.Foundation__pedestal-2 {
+  position: absolute;
+  width: 2rem;
+  height: 1.1rem;
+  top: 2.4rem;
+  left: 27rem;
+  background-color: #633001;
+}
+
+.Foundation__pedestal-3 {
+  position: absolute;
+  width: 2rem;
+  height: 1.1rem;
+  top: 2.4rem;
+  left: 31.5rem;
+  background-color: #633001;
+}
+
+.Door {
+  position: absolute;
+  width: 14.4rem;
+  height: 15rem;
+  top: 37rem;
+  left: 29.35rem;
+}
+
+.Door__pillar-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.2rem;
+  height: 100%;
+  background-color: #9b6423;
+}
+
+.Door__pillar-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.2rem;
+  height: 100%;
+  background-color: #9b6423;
+}
+
+.Home-view {
   width: 100%;
   height: 100vh;
-  min-height: 50rem;
+  min-height: 100vh;
   position: relative;
 }
 /*# sourceMappingURL=main.css.map */
