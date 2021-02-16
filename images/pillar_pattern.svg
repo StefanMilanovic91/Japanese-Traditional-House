@@ -1,0 +1,26 @@
+<svg width="12" height="150" xmlns="http://www.w3.org/2000/svg" stroke="null" style="vector-effect: non-scaling-stroke;">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" fill="none" id="canvas_background" height="152" width="14" y="-1" x="-1"/>
+ </g>
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <path stroke="#754811" style="vector-effect: non-scaling-stroke;" id="svg_3" d="m375.49999,368.05c64,-50 30,29 29.50001,28.95" stroke-width="1.5" fill="none"/>
+  <rect stroke="#754811" style="vector-effect: non-scaling-stroke;" id="svg_6" height="132" width="397" y="409.05" x="226.49999" stroke-width="1.5" fill="none"/>
+  <path stroke="#754811" style="vector-effect: non-scaling-stroke;" id="svg_10" d="m12.48332,72.6999c-3.99999,-1.5 0.33333,4.33333 0.18333,4.29999c0.15,0.03334 2.81667,2.2 2.66666,2.16667" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_13" d="m12.58345,23.86664c-12.63845,19.34499 -13.81617,22.99907 -14.2183,33.93305c-0.40213,10.93399 -0.60321,8.86031 1.00533,16.5895c1.60855,7.72919 14.47681,12.06508 14.29585,12.02738" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_14" d="m21.4144,22.69994c-10.65941,3.59402 -19.02054,22.49365 -20.09473,30.5437c-1.07419,8.05005 -1.52769,12.4448 0.76846,18.87896c2.29615,6.43416 24.33572,18.51516 21.07738,12.84567" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_15" d="m23.57369,22.65825c-13.68978,15.4314 -19.62984,26.83064 -20.01606,33.79643c-0.38622,6.96579 0.50455,11.98934 2.98571,15.82697c2.48116,3.83763 17.79647,15.47586 18.62217,12.29723" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_16" d="m23.97581,28.88884c-5.83162,-1.31181 -12.14378,14.58956 -13.89835,18.52456c-1.75457,3.935 -5.77978,17.26735 -0.85064,20.35029c4.92914,3.08294 15.23512,9.59048 15.93869,7.24919" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_17" d="m25.40663,35.20684c-5.35375,-1.04963 -11.14866,11.67365 -12.75946,14.82218c-1.61079,3.14854 -5.30616,13.81624 -0.78093,16.28302c4.52522,2.46677 13.98668,7.6737 14.6326,5.80034" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_19" d="m-12.17881,40.15667c23.74612,-24.56635 24.93343,-41.66645 24.66363,-41.9073" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_20" d="m-7.84656,45.98856c22.95266,-29.15941 21.62888,-43.23925 23.33121,-43.48918" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_21" d="m-10.67919,31.32554c19.83865,-22.34513 18.69446,-33.13464 20.16583,-33.32616" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_24" d="m-0.375,12.51247c4.5,-8.61329 7.25,-12.34571 4.75,-11.48438c-2.5,0.86133 -8.75,8.61329 -8.625,8.59897" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_25" d="m-3.4019,129.5308c7.03749,-11.51953 6.59764,-13.36265 5.71796,-20.73515c-0.87969,-7.3725 -7.03749,-11.51953 -6.81708,-11.53612" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_26" d="m-4.88003,144.0308c16.42728,-23.54305 14.68525,-32.58616 10.82201,-42.61561c-3.86323,-10.02944 -14.45511,-15.87588 -13.93633,-15.90567" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" id="svg_27" d="m-6.6166,157.5308c24.36328,-33.60053 21.77968,-46.50682 16.05012,-60.82079c-5.72956,-14.31396 -21.43837,-22.65797 -20.66895,-22.70048" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+  <path stroke="#754811" transform="rotate(-2.0013937950134277 8.28330993652338,148.53684997558594) " id="svg_28" d="m7.18338,157.21448c5.43929,-12.88086 8.7633,-18.46256 5.74147,-17.17447c-3.02183,1.28809 -10.5764,12.88085 -10.42531,12.85945" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+ </g>
+</svg>

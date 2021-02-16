@@ -3,7 +3,9 @@
     width: 14.4rem
     height: 15rem
     top: 37rem
-    left: 29.35rem
+    left: 50%
+    transform: translateX(-78%)
+    background-color: rgb(102,59,6)
     &__pillar-left
         position: absolute
         top: 0
@@ -11,6 +13,15 @@
         width: 1.2rem
         height: 100%
         background-color: rgb(155, 100, 35)
+        &:after
+            content: ''
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            background-image: url('../images/pillar_pattern.svg')
+            background-repeat: no-repeat
     &__pillar-right
         position: absolute
         top: 0
@@ -18,3 +29,79 @@
         width: 1.2rem
         height: 100%
         background-color: rgb(155, 100, 35)
+        &:before
+            content: ''
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            background-image: url('../images/pillar_pattern.svg')
+            background-repeat: no-repeat
+            transform: rotate(180deg)
+        &:after
+            content: ''
+            position: absolute
+            top: 0
+            left: -4px
+            width: 4px
+            height: 100%
+            background-color: rgba(57,33,9, .5) 
+
+    &__footer
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 3rem
+        padding-left: 2rem
+        padding-right: 2rem
+        display: flex
+        justify-content: space-around
+        align-items: center
+        &__item
+            width: 1.3rem
+            height: 1.8rem
+            border: 3px solid rgb(74,33,1)
+            border-bottom: 3px solid rgb(149,100,31)
+
+    &__glasses__vertical
+        @extend .Door__footer
+        bottom: 3rem
+        height: 5rem
+        &__item
+            width: 1.3rem
+            height: 5rem
+            background-color: $glass-color
+            border-right: 3px solid rgb(117,116,111)
+            border-top: 3px solid rgb(117,116,111)
+
+    &__glasses__horizontal
+        @extend  .Door__footer
+        bottom: 8rem
+        height: 3rem
+        &__item
+            width: 4.8rem
+            height: 1.8rem
+            background-color: $glass-color
+            border-right: 3px solid rgb(117,116,111)
+            border-top: 3px solid rgb(117,116,111)
+
+    &__top
+        position: absolute
+        bottom: 11rem
+        left: 0
+        width: 100%
+        height: 4rem
+        display: flex
+        flex-direction: column-reverse
+        padding: 0 1.2rem
+        z-index: -1
+        &__brown
+            width: 100%
+            height: 2.5rem
+            background-color: $walls-top-color
+        &__white
+            width: 100%
+            height: 1.5rem
+            background-color: white

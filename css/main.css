@@ -15,7 +15,7 @@ html {
   position: absolute;
   top: 50rem;
   bottom: 0;
-  width: 450px;
+  width: 100%;
   height: 240px;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -61,9 +61,9 @@ html {
   background-color: #a6d15e;
   border-radius: 50%;
   top: 7.8rem;
-  left: 8rem;
-  -webkit-transform: rotateX(13deg) rotateY(-3deg);
-          transform: rotateX(13deg) rotateY(-3deg);
+  left: 9rem;
+  -webkit-transform: rotateX(12deg) rotateY(-9deg);
+          transform: rotateX(12deg) rotateY(-9deg);
   z-index: 0;
 }
 
@@ -92,8 +92,8 @@ html {
   height: 1.1rem;
   background-color: #a6d15e;
   border-radius: 50%;
-  top: 32.2%;
-  right: 7.9rem;
+  top: 32.5%;
+  right: 9rem;
   -webkit-transform: rotateX(13deg) rotateY(4deg);
           transform: rotateX(13deg) rotateY(4deg);
   z-index: 0;
@@ -164,10 +164,10 @@ html {
   width: 18rem;
   top: 52rem;
   height: 4rem;
-  left: 36.5rem;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 50%;
+  -webkit-transform: translateX(-72.5%);
+      -ms-transform: translateX(-72.5%);
+          transform: translateX(-72.5%);
   z-index: 1;
 }
 
@@ -250,10 +250,10 @@ html {
 
 .Foundation {
   position: absolute;
-  width: 35rem;
+  width: 41.5rem;
   height: 3rem;
   top: 52rem;
-  left: 52%;
+  left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -262,7 +262,7 @@ html {
 
 .Foundation__floor {
   position: absolute;
-  width: 37rem;
+  width: 43.5rem;
   height: .7rem;
   left: -1rem;
   background-color: #82470f;
@@ -302,7 +302,7 @@ html {
   width: 2rem;
   height: 1.1rem;
   top: 2.4rem;
-  left: 27rem;
+  left: 31rem;
   background-color: #633001;
 }
 
@@ -311,7 +311,7 @@ html {
   width: 2rem;
   height: 1.1rem;
   top: 2.4rem;
-  left: 31.5rem;
+  right: 1rem;
   background-color: #633001;
 }
 
@@ -320,7 +320,11 @@ html {
   width: 14.4rem;
   height: 15rem;
   top: 37rem;
-  left: 29.35rem;
+  left: 50%;
+  -webkit-transform: translateX(-78%);
+      -ms-transform: translateX(-78%);
+          transform: translateX(-78%);
+  background-color: #663b06;
 }
 
 .Door__pillar-left {
@@ -332,6 +336,17 @@ html {
   background-color: #9b6423;
 }
 
+.Door__pillar-left:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/pillar_pattern.svg");
+  background-repeat: no-repeat;
+}
+
 .Door__pillar-right {
   position: absolute;
   top: 0;
@@ -341,10 +356,564 @@ html {
   background-color: #9b6423;
 }
 
-.Home-view {
+.Door__pillar-right:before {
+  content: '';
   width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/pillar_pattern.svg");
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Door__pillar-right:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 4px;
+  height: 100%;
+  background-color: rgba(57, 33, 9, 0.5);
+}
+
+.Door__footer, .Door__glasses__vertical, .Door__glasses__horizontal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Door__footer__item {
+  width: 1.3rem;
+  height: 1.8rem;
+  border: 3px solid #4a2101;
+  border-bottom: 3px solid #95641f;
+}
+
+.Door__glasses__vertical {
+  bottom: 3rem;
+  height: 5rem;
+}
+
+.Door__glasses__vertical__item {
+  width: 1.3rem;
+  height: 5rem;
+  background-color: #c3d9d6;
+  border-right: 3px solid #75746f;
+  border-top: 3px solid #75746f;
+}
+
+.Door__glasses__horizontal {
+  bottom: 8rem;
+  height: 3rem;
+}
+
+.Door__glasses__horizontal__item {
+  width: 4.8rem;
+  height: 1.8rem;
+  background-color: #c3d9d6;
+  border-right: 3px solid #75746f;
+  border-top: 3px solid #75746f;
+}
+
+.Door__top {
+  position: absolute;
+  bottom: 11rem;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding: 0 1.2rem;
+  z-index: -1;
+}
+
+.Door__top__brown {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #571f04;
+}
+
+.Door__top__white {
+  width: 100%;
+  height: 1.5rem;
+  background-color: white;
+}
+
+.Walls {
+  position: absolute;
+  top: 38rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 41.5rem;
+  height: 14rem;
+}
+
+.Wall__left {
+  position: absolute;
+  width: 5.4rem;
+  height: 12rem;
+  bottom: 0;
+  left: 4.6rem;
+  background-color: #663b06;
+}
+
+.Wall__left__vertical__glasses, .Wall__right__vertical__glasses {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 9.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2px;
+}
+
+.Wall__left__vertical__glasses-item, .Wall__right__vertical__glasses-item {
+  width: 2rem;
+  height: 8rem;
+  background-color: #c3d9d6;
+  border-right: 3px solid #75746f;
+  border-top: 3px solid #75746f;
+}
+
+.Wall__left__horizontal__glasses, .Wall__right__horizontal__glasses {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2px;
+}
+
+.Wall__left__horizontal__glasses-item, .Wall__right__horizontal__glasses-item {
+  width: 4.6rem;
+  height: 2.4rem;
+  background-color: #c3d9d6;
+  border-top: 3px solid #75746f;
+}
+
+.Wall__left__pillar, .Wall__right__pillar {
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  width: 1rem;
+  height: 100%;
+  background-color: #784206;
+}
+
+.Wall__left__top, .Wall__right__top {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  width: 8rem;
+  height: 2rem;
+  background-color: #571f04;
+}
+
+.Wall__right {
+  position: absolute;
+  left: 23.9rem;
+  bottom: 0;
+  width: 13rem;
+  height: 12rem;
+  background-color: #663b06;
+}
+
+.Wall__right__vertical__glasses {
+  left: 0;
+}
+
+.Wall__right__horizontal__glasses {
+  right: -1px;
+  width: 121%;
+}
+
+.Wall__right__horizontal__glasses-item {
+  margin: 0 3px;
+  width: 4.4rem;
+}
+
+.Wall__right__pillar {
+  left: initial;
+  right: 1.5rem;
+}
+
+.Wall__right__top {
+  left: initial;
+  right: 1.5rem;
+  width: 17rem;
+}
+
+.Roof {
+  width: 50rem;
+  height: 14rem;
+  position: absolute;
+  top: 23rem;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+}
+
+.Roof__main__top {
+  position: absolute;
+  width: 29rem;
+  height: 6px;
+  border-radius: 3px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.Roof__top-1, .Roof__top-2 {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background-color: #9ec1c7;
+}
+
+.Roof__top-2 {
+  top: 3px;
+  background-color: #637e85;
+}
+
+.Roof__main__left__edge, .Roof__main__right__edge {
+  position: absolute;
+  top: -4px;
+  left: 92px;
+  width: 5px;
+  height: 7rem;
+  background-color: #9ec1c7;
+  -webkit-transform: rotateZ(32deg);
+      -ms-transform: rotate(32deg);
+          transform: rotateZ(32deg);
+  z-index: -1;
+  border-bottom-right-radius: 3px;
+}
+
+.Roof__main__curve__left__edge, .Roof__main__curve__right__edge {
+  position: absolute;
+  top: 0;
+  left: -56px;
+  width: 14.5rem;
+  height: 10rem;
+  border: solid 6px #9ec1c7;
+  border-color: #9ec1c7 transparent transparent transparent;
+  border-radius: 320%/140px 100px 0 0;
+  -webkit-transform: rotate(142deg);
+      -ms-transform: rotate(142deg);
+          transform: rotate(142deg);
+}
+
+.Roof__main__right__edge {
+  left: initial;
+  right: 92px;
+  -webkit-transform: rotateZ(-32deg);
+      -ms-transform: rotate(-32deg);
+          transform: rotateZ(-32deg);
+  border-bottom-left-radius: 6px;
+}
+
+.Roof__main__curve__right__edge {
+  top: 2px;
+  left: initial;
+  right: -5.6rem;
+  -webkit-transform: rotate(-138deg);
+      -ms-transform: rotate(-138deg);
+          transform: rotate(-138deg);
+}
+
+.Roof__main__tile {
+  width: 51.4rem;
+  height: 17.5rem;
+  position: absolute;
+  top: -18px;
+  left: -8px;
+  background-color: cadetblue;
+  z-index: -5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotateX(40deg);
+          transform: rotateX(40deg);
+  -webkit-clip-path: polygon(22% 0%, 78% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(22% 0%, 78% 0%, 100% 100%, 0% 100%);
+}
+
+.Roof__main__tile__column {
+  position: absolute;
+  width: 13px;
+  height: 15rem;
+  border-right: 3px solid #3c404c;
+}
+
+.Roof__main__tile__column-2 {
+  top: 16px;
+  left: 45px;
+  -webkit-transform: rotateZ(25deg);
+      -ms-transform: rotate(25deg);
+          transform: rotateZ(25deg);
+}
+
+.Roof__main__tile__column-3 {
+  top: 20px;
+  left: 57px;
+  -webkit-transform: rotateZ(22deg);
+      -ms-transform: rotate(22deg);
+          transform: rotateZ(22deg);
+}
+
+.Roof__main__tile__column-4 {
+  top: -7px;
+  left: 74px;
+  -webkit-transform: rotateZ(19deg);
+      -ms-transform: rotate(19deg);
+          transform: rotateZ(19deg);
+  height: 18rem;
+}
+
+.Roof__main__tile__column-5 {
+  top: -15px;
+  left: 89px;
+  -webkit-transform: rotateZ(17deg);
+      -ms-transform: rotate(17deg);
+          transform: rotateZ(17deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-6 {
+  top: -15px;
+  left: 103px;
+  -webkit-transform: rotateZ(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotateZ(15deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-7 {
+  top: -15px;
+  left: 117px;
+  -webkit-transform: rotateZ(12deg);
+      -ms-transform: rotate(12deg);
+          transform: rotateZ(12deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-8 {
+  top: -15px;
+  left: 131px;
+  -webkit-transform: rotateZ(9deg);
+      -ms-transform: rotate(9deg);
+          transform: rotateZ(9deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-9 {
+  top: -15px;
+  left: 146px;
+  -webkit-transform: rotateZ(6deg);
+      -ms-transform: rotate(6deg);
+          transform: rotateZ(6deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-10 {
+  top: -15px;
+  left: 159px;
+  -webkit-transform: rotateZ(3deg);
+      -ms-transform: rotate(3deg);
+          transform: rotateZ(3deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-11 {
+  top: -15px;
+  left: 172px;
+  -webkit-transform: rotateZ(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotateZ(0deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-12 {
+  top: -15px;
+  left: 187px;
+  -webkit-transform: rotateZ(-1deg);
+      -ms-transform: rotate(-1deg);
+          transform: rotateZ(-1deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-13 {
+  top: -15px;
+  left: 203px;
+  -webkit-transform: rotateZ(-1deg);
+      -ms-transform: rotate(-1deg);
+          transform: rotateZ(-1deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-14 {
+  top: -15px;
+  left: 221px;
+  -webkit-transform: rotateZ(-1deg);
+      -ms-transform: rotate(-1deg);
+          transform: rotateZ(-1deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-15 {
+  top: -15px;
+  left: 238px;
+  -webkit-transform: rotateZ(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotateZ(0deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-16 {
+  top: -15px;
+  left: 255px;
+  -webkit-transform: rotateZ(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotateZ(0deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-17 {
+  top: -15px;
+  left: 274px;
+  -webkit-transform: rotateZ(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotateZ(0deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-18 {
+  top: -15px;
+  left: 292px;
+  -webkit-transform: rotateZ(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotateZ(0deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-19 {
+  top: -15px;
+  left: 309px;
+  -webkit-transform: rotateZ(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotateZ(0deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-20 {
+  top: -15px;
+  left: 326px;
+  -webkit-transform: rotateZ(-1deg);
+      -ms-transform: rotate(-1deg);
+          transform: rotateZ(-1deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-21 {
+  top: -15px;
+  left: 343px;
+  -webkit-transform: rotateZ(-3deg);
+      -ms-transform: rotate(-3deg);
+          transform: rotateZ(-3deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-22 {
+  top: -15px;
+  left: 360px;
+  -webkit-transform: rotateZ(-6deg);
+      -ms-transform: rotate(-6deg);
+          transform: rotateZ(-6deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-23 {
+  top: -15px;
+  left: 377px;
+  -webkit-transform: rotateZ(-9deg);
+      -ms-transform: rotate(-9deg);
+          transform: rotateZ(-9deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-24 {
+  top: -15px;
+  left: 394px;
+  -webkit-transform: rotateZ(-14deg);
+      -ms-transform: rotate(-14deg);
+          transform: rotateZ(-14deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-25 {
+  top: -18px;
+  left: 415px;
+  -webkit-transform: rotateZ(-19deg);
+      -ms-transform: rotate(-19deg);
+          transform: rotateZ(-19deg);
+  height: 19rem;
+}
+
+.Roof__main__tile__column-26 {
+  top: -20px;
+  left: 435px;
+  -webkit-transform: rotateZ(-24deg);
+      -ms-transform: rotate(-24deg);
+          transform: rotateZ(-24deg);
+  height: 19rem;
+}
+
+.Home-view {
+  width: 50rem;
   height: 100vh;
   min-height: 100vh;
   position: relative;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
