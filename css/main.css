@@ -585,328 +585,2256 @@ html {
   height: 14rem;
   position: absolute;
   top: 23rem;
-  -webkit-perspective: 1000;
-          perspective: 1000;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  z-index: 1;
+}
+
+.Roof__main {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateX(62deg);
+          transform: rotateX(62deg);
+}
+
+.Roof__main__edge {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10px;
 }
 
 .Roof__main__top {
   position: absolute;
   width: 29rem;
-  height: 6px;
+  height: 16px;
   border-radius: 3px;
   top: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-50.5%);
+      -ms-transform: translateX(-50.5%);
+          transform: translateX(-50.5%);
   overflow: hidden;
 }
 
-.Roof__top-1, .Roof__top-2 {
+.Roof__main__top__1, .Roof__main__top__2 {
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 8px;
   top: 0;
   left: 0;
   background-color: #9ec1c7;
 }
 
-.Roof__top-2 {
-  top: 3px;
+.Roof__main__top__2 {
+  top: 8px;
   background-color: #637e85;
 }
 
 .Roof__main__left__edge, .Roof__main__right__edge {
   position: absolute;
-  top: -4px;
-  left: 92px;
-  width: 5px;
+  top: 13px;
+  left: 100px;
+  width: 8px;
   height: 7rem;
   background-color: #9ec1c7;
-  -webkit-transform: rotateZ(32deg);
-      -ms-transform: rotate(32deg);
-          transform: rotateZ(32deg);
+  -webkit-transform: rotateZ(19deg);
+      -ms-transform: rotate(19deg);
+          transform: rotateZ(19deg);
   z-index: -1;
   border-bottom-right-radius: 3px;
 }
 
 .Roof__main__curve__left__edge, .Roof__main__curve__right__edge {
   position: absolute;
-  top: 0;
-  left: -56px;
+  top: 45px;
+  left: -39px;
   width: 14.5rem;
   height: 10rem;
-  border: solid 6px #9ec1c7;
+  border: solid 9px #9ec1c7;
   border-color: #9ec1c7 transparent transparent transparent;
-  border-radius: 320%/140px 100px 0 0;
-  -webkit-transform: rotate(142deg);
-      -ms-transform: rotate(142deg);
-          transform: rotate(142deg);
+  border-radius: 165%/107px 100px 0 0;
+  -webkit-transform: rotate(129deg);
+      -ms-transform: rotate(129deg);
+          transform: rotate(129deg);
 }
 
 .Roof__main__right__edge {
   left: initial;
-  right: 92px;
-  -webkit-transform: rotateZ(-32deg);
-      -ms-transform: rotate(-32deg);
-          transform: rotateZ(-32deg);
+  right: 100px;
+  -webkit-transform: rotateZ(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotateZ(-20deg);
   border-bottom-left-radius: 6px;
 }
 
 .Roof__main__curve__right__edge {
-  top: 2px;
+  top: 45px;
   left: initial;
-  right: -5.6rem;
-  -webkit-transform: rotate(-138deg);
-      -ms-transform: rotate(-138deg);
-          transform: rotate(-138deg);
+  right: -38px;
+  -webkit-transform: rotate(-129deg);
+      -ms-transform: rotate(-129deg);
+          transform: rotate(-129deg);
 }
 
-.Roof__main__tile {
-  width: 51.4rem;
-  height: 17.5rem;
+.Roof__main__tiles {
+  width: 48rem;
+  height: 19rem;
   position: absolute;
-  top: -18px;
-  left: -8px;
-  background-color: cadetblue;
+  top: 27px;
+  left: 7px;
   z-index: -5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: rotateX(40deg);
-          transform: rotateX(40deg);
-  -webkit-clip-path: polygon(22% 0%, 78% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(22% 0%, 78% 0%, 100% 100%, 0% 100%);
 }
 
-.Roof__main__tile__column {
+.Roof__main__tiles__column {
   position: absolute;
   width: 13px;
   height: 15rem;
   border-right: 3px solid #3c404c;
 }
 
-.Roof__main__tile__column-2 {
-  top: 16px;
-  left: 45px;
-  -webkit-transform: rotateZ(25deg);
-      -ms-transform: rotate(25deg);
-          transform: rotateZ(25deg);
+.Roof__main__column__tile {
+  position: absolute;
+  width: 32px;
+  height: 10rem;
+  border: solid 4px #59616c;
+  border-color: #59616c transparent transparent transparent;
+  border-radius: 150%/115px 100px 0 0;
+  -webkit-transform: rotate(161deg);
+      -ms-transform: rotate(161deg);
+          transform: rotate(161deg);
 }
 
-.Roof__main__tile__column-3 {
-  top: 20px;
+.Roof__main__tiles__column-2 {
+  top: 10px;
+  left: 48px;
+  -webkit-transform: rotateZ(27deg);
+      -ms-transform: rotate(27deg);
+          transform: rotateZ(27deg);
+  height: 15rem;
+}
+
+.Roof__main__tiles__column-2 .Roof__main__column__tile:last-child {
+  width: 27px;
+  top: 61px;
+  left: 23px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(221deg);
+      -ms-transform: rotate(221deg);
+          transform: rotate(221deg);
+}
+
+.Roof__main__tiles__column-3 {
+  top: 17px;
   left: 57px;
-  -webkit-transform: rotateZ(22deg);
-      -ms-transform: rotate(22deg);
-          transform: rotateZ(22deg);
+  -webkit-transform: rotateZ(23deg);
+      -ms-transform: rotate(23deg);
+          transform: rotateZ(23deg);
+  height: 15rem;
 }
 
-.Roof__main__tile__column-4 {
+.Roof__main__tiles__column-3 .Roof__main__column__tile:nth-child(1) {
+  width: 33px;
+  top: 36px;
+  left: -27px;
+  -webkit-transform: rotate(160deg);
+      -ms-transform: rotate(160deg);
+          transform: rotate(160deg);
+}
+
+.Roof__main__tiles__column-3 .Roof__main__column__tile:last-child {
+  width: 34px;
+  top: 54px;
+  left: -5px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(191deg);
+      -ms-transform: rotate(191deg);
+          transform: rotate(191deg);
+}
+
+.Roof__main__tiles__column-4 {
   top: -7px;
   left: 74px;
-  -webkit-transform: rotateZ(19deg);
-      -ms-transform: rotate(19deg);
-          transform: rotateZ(19deg);
+  -webkit-transform: rotateZ(18deg);
+      -ms-transform: rotate(18deg);
+          transform: rotateZ(18deg);
   height: 18rem;
 }
 
-.Roof__main__tile__column-5 {
+.Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(1) {
+  width: 35px;
+  top: -2px;
+  left: -27px;
+  -webkit-transform: rotate(163deg);
+      -ms-transform: rotate(163deg);
+          transform: rotate(163deg);
+}
+
+.Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(2) {
+  width: 35px;
+  top: 19px;
+  left: -27px;
+  -webkit-transform: rotate(163deg);
+      -ms-transform: rotate(163deg);
+          transform: rotate(163deg);
+}
+
+.Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(3) {
+  width: 35px;
+  top: 39px;
+  left: -27px;
+  -webkit-transform: rotate(163deg);
+      -ms-transform: rotate(163deg);
+          transform: rotate(163deg);
+}
+
+.Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(4) {
+  width: 37px;
+  top: 59px;
+  left: -28px;
+  -webkit-transform: rotate(163deg);
+      -ms-transform: rotate(163deg);
+          transform: rotate(163deg);
+}
+
+.Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(5) {
+  width: 38px;
+  top: 79px;
+  left: -29px;
+  -webkit-transform: rotate(163deg);
+      -ms-transform: rotate(163deg);
+          transform: rotate(163deg);
+}
+
+.Roof__main__tiles__column-4 .Roof__main__column__tile:last-child {
+  width: 38px;
+  top: 85px;
+  left: -9px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(191deg);
+      -ms-transform: rotate(191deg);
+          transform: rotate(191deg);
+}
+
+.Roof__main__tiles__column-6 {
   top: -15px;
-  left: 89px;
-  -webkit-transform: rotateZ(17deg);
-      -ms-transform: rotate(17deg);
-          transform: rotateZ(17deg);
+  left: 92px;
+  -webkit-transform: rotateZ(16deg);
+      -ms-transform: rotate(16deg);
+          transform: rotateZ(16deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-6 {
+.Roof__main__tiles__column-6 .Roof__main__column__tile:nth-child(1) {
+  width: 32px;
+  top: -70px;
+  left: -23px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-6 .Roof__main__column__tile:nth-child(2) {
+  width: 33px;
+  top: -52px;
+  left: -24px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-6 .Roof__main__column__tile:nth-child(3) {
+  width: 33px;
+  top: -34px;
+  left: -24px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-6 .Roof__main__column__tile:nth-child(4) {
+  width: 33px;
+  top: -13px;
+  left: -24px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-6 .Roof__main__column__tile:nth-child(5) {
+  width: 35px;
+  top: 6px;
+  left: -25px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-6 .Roof__main__column__tile:nth-child(6) {
+  width: 35px;
+  top: 27px;
+  left: -25px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-6 .Roof__main__column__tile:nth-child(7) {
+  width: 35px;
+  top: 46px;
+  left: -25px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-6 .Roof__main__column__tile:nth-child(8) {
+  width: 36px;
+  top: 65px;
+  left: -26px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-6 .Roof__main__column__tile:nth-child(9) {
+  width: 39px;
+  top: 86px;
+  left: -29px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-6 .Roof__main__column__tile:last-child {
+  width: 38px;
+  top: 97px;
+  left: -18px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-7 {
   top: -15px;
-  left: 103px;
-  -webkit-transform: rotateZ(15deg);
-      -ms-transform: rotate(15deg);
-          transform: rotateZ(15deg);
+  left: 109px;
+  -webkit-transform: rotateZ(13deg);
+      -ms-transform: rotate(13deg);
+          transform: rotateZ(13deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-7 {
+.Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(1) {
+  width: 29px;
+  top: -69px;
+  left: -21px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(2) {
+  width: 30px;
+  top: -52px;
+  left: -21px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(3) {
+  width: 30px;
+  top: -33px;
+  left: -22px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(4) {
+  width: 33px;
+  top: -13px;
+  left: -24px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(5) {
+  width: 34px;
+  top: 6px;
+  left: -25px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(6) {
+  width: 34px;
+  top: 27px;
+  left: -25px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(7) {
+  width: 35px;
+  top: 46px;
+  left: -25px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(8) {
+  width: 36px;
+  top: 64px;
+  left: -26px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(9) {
+  width: 38px;
+  top: 85px;
+  left: -28px;
+  -webkit-transform: rotate(165deg);
+      -ms-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+.Roof__main__tiles__column-7 .Roof__main__column__tile:last-child {
+  width: 39px;
+  top: 98px;
+  left: -19px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-8 {
   top: -15px;
-  left: 117px;
-  -webkit-transform: rotateZ(12deg);
-      -ms-transform: rotate(12deg);
-          transform: rotateZ(12deg);
+  left: 125px;
+  -webkit-transform: rotateZ(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotateZ(10deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-8 {
+.Roof__main__tiles__column-8 .Roof__main__column__tile:nth-child(1) {
+  width: 28px;
+  top: -70px;
+  left: -16px;
+  -webkit-transform: rotate(170deg);
+      -ms-transform: rotate(170deg);
+          transform: rotate(170deg);
+}
+
+.Roof__main__tiles__column-8 .Roof__main__column__tile:nth-child(2) {
+  width: 30px;
+  top: -52px;
+  left: -18px;
+  -webkit-transform: rotate(170deg);
+      -ms-transform: rotate(170deg);
+          transform: rotate(170deg);
+}
+
+.Roof__main__tiles__column-8 .Roof__main__column__tile:nth-child(3) {
+  width: 30px;
+  top: -34px;
+  left: -18px;
+  -webkit-transform: rotate(170deg);
+      -ms-transform: rotate(170deg);
+          transform: rotate(170deg);
+}
+
+.Roof__main__tiles__column-8 .Roof__main__column__tile:nth-child(4) {
+  width: 31px;
+  top: -14px;
+  left: -19px;
+  -webkit-transform: rotate(170deg);
+      -ms-transform: rotate(170deg);
+          transform: rotate(170deg);
+}
+
+.Roof__main__tiles__column-8 .Roof__main__column__tile:nth-child(5) {
+  width: 32px;
+  top: 4px;
+  left: -17px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-8 .Roof__main__column__tile:nth-child(6) {
+  width: 34px;
+  top: 24px;
+  left: -19px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-8 .Roof__main__column__tile:nth-child(7) {
+  width: 35px;
+  top: 44px;
+  left: -20px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-8 .Roof__main__column__tile:nth-child(8) {
+  width: 36px;
+  top: 62px;
+  left: -21px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-8 .Roof__main__column__tile:nth-child(9) {
+  width: 38px;
+  top: 82px;
+  left: -23px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-8 .Roof__main__column__tile:last-child {
+  width: 38px;
+  top: 98px;
+  left: -18px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-9 {
   top: -15px;
-  left: 131px;
-  -webkit-transform: rotateZ(9deg);
-      -ms-transform: rotate(9deg);
-          transform: rotateZ(9deg);
+  left: 142px;
+  -webkit-transform: rotateZ(7deg);
+      -ms-transform: rotate(7deg);
+          transform: rotateZ(7deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-9 {
-  top: -15px;
-  left: 146px;
-  -webkit-transform: rotateZ(6deg);
-      -ms-transform: rotate(6deg);
-          transform: rotateZ(6deg);
-  height: 19rem;
+.Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(1) {
+  width: 28px;
+  top: -69px;
+  left: -14px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
 }
 
-.Roof__main__tile__column-10 {
+.Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(2) {
+  width: 28px;
+  top: -71px;
+  left: -17px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(2) {
+  width: 32px;
+  top: -52px;
+  left: -17px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(3) {
+  width: 32px;
+  top: -34px;
+  left: -17px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(4) {
+  width: 33px;
+  top: -14px;
+  left: -18px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(5) {
+  width: 34px;
+  top: 4px;
+  left: -19px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(6) {
+  width: 34px;
+  top: 24px;
+  left: -20px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(7) {
+  width: 36px;
+  top: 44px;
+  left: -21px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(8) {
+  width: 37px;
+  top: 62px;
+  left: -22px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(9) {
+  width: 38px;
+  top: 81px;
+  left: -23px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-9 .Roof__main__column__tile:last-child {
+  width: 40px;
+  top: 98px;
+  left: -20px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-10 {
   top: -15px;
   left: 159px;
-  -webkit-transform: rotateZ(3deg);
-      -ms-transform: rotate(3deg);
-          transform: rotateZ(3deg);
+  -webkit-transform: rotateZ(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotateZ(4deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-11 {
+.Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(1) {
+  width: 28px;
+  top: -69px;
+  left: -14px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(2) {
+  width: 32px;
+  top: -52px;
+  left: -17px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(3) {
+  width: 32px;
+  top: -34px;
+  left: -17px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(4) {
+  width: 32px;
+  top: -14px;
+  left: -17px;
+  -webkit-transform: rotate(173deg);
+      -ms-transform: rotate(173deg);
+          transform: rotate(173deg);
+}
+
+.Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(5) {
+  width: 33px;
+  top: 4px;
+  left: -16px;
+  -webkit-transform: rotate(176deg);
+      -ms-transform: rotate(176deg);
+          transform: rotate(176deg);
+}
+
+.Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(6) {
+  width: 34px;
+  top: 24px;
+  left: -17px;
+  -webkit-transform: rotate(176deg);
+      -ms-transform: rotate(176deg);
+          transform: rotate(176deg);
+}
+
+.Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(7) {
+  width: 35px;
+  top: 43px;
+  left: -17px;
+  -webkit-transform: rotate(176deg);
+      -ms-transform: rotate(176deg);
+          transform: rotate(176deg);
+}
+
+.Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(8) {
+  width: 37px;
+  top: 61px;
+  left: -19px;
+  -webkit-transform: rotate(176deg);
+      -ms-transform: rotate(176deg);
+          transform: rotate(176deg);
+}
+
+.Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(9) {
+  width: 38px;
+  top: 80px;
+  left: -20px;
+  -webkit-transform: rotate(176deg);
+      -ms-transform: rotate(176deg);
+          transform: rotate(176deg);
+}
+
+.Roof__main__tiles__column-10 .Roof__main__column__tile:last-child {
+  width: 41px;
+  top: 98px;
+  left: -20px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-11 {
   top: -15px;
-  left: 172px;
-  -webkit-transform: rotateZ(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotateZ(0deg);
+  left: 175px;
+  -webkit-transform: rotateZ(1deg);
+      -ms-transform: rotate(1deg);
+          transform: rotateZ(1deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-12 {
+.Roof__main__tiles__column-11 .Roof__main__column__tile:nth-child(1) {
+  width: 28px;
+  top: -69px;
+  left: -9px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-11 .Roof__main__column__tile:nth-child(2) {
+  width: 29px;
+  top: -52px;
+  left: -10px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-11 .Roof__main__column__tile:nth-child(3) {
+  width: 29px;
+  top: -34px;
+  left: -10px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-11 .Roof__main__column__tile:nth-child(4) {
+  width: 32px;
   top: -15px;
-  left: 187px;
+  left: -12px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-11 .Roof__main__column__tile:nth-child(5) {
+  width: 33px;
+  top: 3px;
+  left: -13px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-11 .Roof__main__column__tile:nth-child(6) {
+  width: 34px;
+  top: 24px;
+  left: -17px;
+  -webkit-transform: rotate(176deg);
+      -ms-transform: rotate(176deg);
+          transform: rotate(176deg);
+}
+
+.Roof__main__tiles__column-11 .Roof__main__column__tile:nth-child(7) {
+  width: 34px;
+  top: 42px;
+  left: -15px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-11 .Roof__main__column__tile:nth-child(8) {
+  width: 36px;
+  top: 60px;
+  left: -16px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-11 .Roof__main__column__tile:nth-child(9) {
+  width: 38px;
+  top: 80px;
+  left: -17px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-11 .Roof__main__column__tile:last-child {
+  width: 38px;
+  top: 98px;
+  left: -18px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-12 {
+  top: -15px;
+  left: 191px;
   -webkit-transform: rotateZ(-1deg);
       -ms-transform: rotate(-1deg);
           transform: rotateZ(-1deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-13 {
+.Roof__main__tiles__column-12 .Roof__main__column__tile:nth-child(1) {
+  width: 27px;
+  top: -69px;
+  left: -7px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-12 .Roof__main__column__tile:nth-child(2) {
+  width: 31px;
+  top: -52px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-12 .Roof__main__column__tile:nth-child(3) {
+  width: 31px;
+  top: -34px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-12 .Roof__main__column__tile:nth-child(4) {
+  width: 32px;
   top: -15px;
-  left: 203px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-12 .Roof__main__column__tile:nth-child(5) {
+  width: 33px;
+  top: 3px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-12 .Roof__main__column__tile:nth-child(6) {
+  width: 34px;
+  top: 23px;
+  left: -12px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-12 .Roof__main__column__tile:nth-child(7) {
+  width: 34px;
+  top: 42px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-12 .Roof__main__column__tile:nth-child(8) {
+  width: 36px;
+  top: 60px;
+  left: -14px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-12 .Roof__main__column__tile:nth-child(9) {
+  width: 37px;
+  top: 80px;
+  left: -15px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-12 .Roof__main__column__tile:last-child {
+  width: 37px;
+  top: 98px;
+  left: -18px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-13 {
+  top: -15px;
+  left: 207px;
   -webkit-transform: rotateZ(-1deg);
       -ms-transform: rotate(-1deg);
           transform: rotateZ(-1deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-14 {
+.Roof__main__tiles__column-13 .Roof__main__column__tile:nth-child(1) {
+  width: 32px;
+  top: -69px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-13 .Roof__main__column__tile:nth-child(2) {
+  width: 30px;
+  top: -52px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-13 .Roof__main__column__tile:nth-child(3) {
+  width: 30px;
+  top: -34px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-13 .Roof__main__column__tile:nth-child(4) {
+  width: 32px;
   top: -15px;
-  left: 221px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-13 .Roof__main__column__tile:nth-child(5) {
+  width: 33px;
+  top: 3px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-13 .Roof__main__column__tile:nth-child(6) {
+  width: 33px;
+  top: 23px;
+  left: -12px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-13 .Roof__main__column__tile:nth-child(7) {
+  width: 34px;
+  top: 42px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-13 .Roof__main__column__tile:nth-child(8) {
+  width: 34px;
+  top: 60px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-13 .Roof__main__column__tile:nth-child(9) {
+  width: 33px;
+  top: 80px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-13 .Roof__main__column__tile:last-child {
+  width: 33px;
+  top: 98px;
+  left: -12px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-14 {
+  top: -15px;
+  left: 223px;
   -webkit-transform: rotateZ(-1deg);
       -ms-transform: rotate(-1deg);
           transform: rotateZ(-1deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-15 {
+.Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(1) {
+  width: 32px;
+  top: -69px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(2) {
+  width: 30px;
+  top: -52px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(3) {
+  width: 30px;
+  top: -34px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(4) {
+  width: 32px;
   top: -15px;
-  left: 238px;
-  -webkit-transform: rotateZ(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotateZ(0deg);
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(5) {
+  width: 33px;
+  top: 3px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(6) {
+  width: 33px;
+  top: 23px;
+  left: -12px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(7) {
+  width: 34px;
+  top: 42px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(8) {
+  width: 34px;
+  top: 60px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(9) {
+  width: 33px;
+  top: 80px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-14 .Roof__main__column__tile:last-child {
+  width: 33px;
+  top: 98px;
+  left: -13px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-15 {
+  top: -15px;
+  left: 239px;
+  -webkit-transform: rotateZ(-1deg);
+      -ms-transform: rotate(-1deg);
+          transform: rotateZ(-1deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-16 {
+.Roof__main__tiles__column-15 .Roof__main__column__tile:nth-child(1) {
+  width: 32px;
+  top: -69px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-15 .Roof__main__column__tile:nth-child(2) {
+  width: 30px;
+  top: -52px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-15 .Roof__main__column__tile:nth-child(3) {
+  width: 30px;
+  top: -34px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-15 .Roof__main__column__tile:nth-child(4) {
+  width: 32px;
+  top: -15px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-15 .Roof__main__column__tile:nth-child(5) {
+  width: 33px;
+  top: 3px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-15 .Roof__main__column__tile:nth-child(6) {
+  width: 33px;
+  top: 23px;
+  left: -12px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-15 .Roof__main__column__tile:nth-child(7) {
+  width: 34px;
+  top: 42px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-15 .Roof__main__column__tile:nth-child(8) {
+  width: 34px;
+  top: 60px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-15 .Roof__main__column__tile:nth-child(9) {
+  width: 33px;
+  top: 80px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-15 .Roof__main__column__tile:last-child {
+  width: 34px;
+  top: 98px;
+  left: -13px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-16 {
   top: -15px;
   left: 255px;
-  -webkit-transform: rotateZ(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotateZ(-2deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-17 {
-  top: -15px;
-  left: 274px;
-  -webkit-transform: rotateZ(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotateZ(0deg);
-  height: 19rem;
+.Roof__main__tiles__column-16 .Roof__main__column__tile:nth-child(1) {
+  width: 32px;
+  top: -69px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
 }
 
-.Roof__main__tile__column-18 {
-  top: -15px;
-  left: 292px;
-  -webkit-transform: rotateZ(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotateZ(0deg);
-  height: 19rem;
+.Roof__main__tiles__column-16 .Roof__main__column__tile:nth-child(2) {
+  width: 31px;
+  top: -53px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
 }
 
-.Roof__main__tile__column-19 {
-  top: -15px;
-  left: 309px;
-  -webkit-transform: rotateZ(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotateZ(0deg);
-  height: 19rem;
+.Roof__main__tiles__column-16 .Roof__main__column__tile:nth-child(3) {
+  width: 31px;
+  top: -34px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
 }
 
-.Roof__main__tile__column-20 {
+.Roof__main__tiles__column-16 .Roof__main__column__tile:nth-child(4) {
+  width: 32px;
   top: -15px;
-  left: 326px;
-  -webkit-transform: rotateZ(-1deg);
-      -ms-transform: rotate(-1deg);
-          transform: rotateZ(-1deg);
-  height: 19rem;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
 }
 
-.Roof__main__tile__column-21 {
+.Roof__main__tiles__column-16 .Roof__main__column__tile:nth-child(5) {
+  width: 33px;
+  top: 3px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-16 .Roof__main__column__tile:nth-child(6) {
+  width: 33px;
+  top: 23px;
+  left: -12px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-16 .Roof__main__column__tile:nth-child(7) {
+  width: 34px;
+  top: 42px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-16 .Roof__main__column__tile:nth-child(8) {
+  width: 34px;
+  top: 60px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-16 .Roof__main__column__tile:nth-child(9) {
+  width: 34px;
+  top: 80px;
+  left: -12px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-16 .Roof__main__column__tile:last-child {
+  width: 34px;
+  top: 98px;
+  left: -14px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-17 {
   top: -15px;
-  left: 343px;
+  left: 270px;
   -webkit-transform: rotateZ(-3deg);
       -ms-transform: rotate(-3deg);
           transform: rotateZ(-3deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-22 {
+.Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(1) {
+  width: 31px;
+  top: -69px;
+  left: -9px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(2) {
+  width: 31px;
+  top: -53px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(3) {
+  width: 31px;
+  top: -34px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(4) {
+  width: 32px;
   top: -15px;
-  left: 360px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(5) {
+  width: 33px;
+  top: 3px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(6) {
+  width: 33px;
+  top: 23px;
+  left: -12px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(7) {
+  width: 34px;
+  top: 42px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(8) {
+  width: 34px;
+  top: 60px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(9) {
+  width: 34px;
+  top: 80px;
+  left: -12px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-17 .Roof__main__column__tile:last-child {
+  width: 35px;
+  top: 98px;
+  left: -14px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-18 {
+  top: -15px;
+  left: 286px;
+  -webkit-transform: rotateZ(-4deg);
+      -ms-transform: rotate(-4deg);
+          transform: rotateZ(-4deg);
+  height: 19rem;
+}
+
+.Roof__main__tiles__column-18 .Roof__main__column__tile:nth-child(1) {
+  width: 32px;
+  top: -70px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-18 .Roof__main__column__tile:nth-child(2) {
+  width: 31px;
+  top: -53px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-18 .Roof__main__column__tile:nth-child(3) {
+  width: 31px;
+  top: -34px;
+  left: -10px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-18 .Roof__main__column__tile:nth-child(4) {
+  width: 32px;
+  top: -15px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-18 .Roof__main__column__tile:nth-child(5) {
+  width: 33px;
+  top: 3px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-18 .Roof__main__column__tile:nth-child(6) {
+  width: 32px;
+  top: 23px;
+  left: -11px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-18 .Roof__main__column__tile:nth-child(7) {
+  width: 34px;
+  top: 42px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-18 .Roof__main__column__tile:nth-child(8) {
+  width: 34px;
+  top: 60px;
+  left: -13px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-18 .Roof__main__column__tile:nth-child(9) {
+  width: 34px;
+  top: 80px;
+  left: -12px;
+  -webkit-transform: rotate(182deg);
+      -ms-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.Roof__main__tiles__column-18 .Roof__main__column__tile:last-child {
+  width: 35px;
+  top: 98px;
+  left: -14px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-19 {
+  top: -15px;
+  left: 303px;
   -webkit-transform: rotateZ(-6deg);
       -ms-transform: rotate(-6deg);
           transform: rotateZ(-6deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-23 {
+.Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(1) {
+  width: 30px;
+  top: -70px;
+  left: -7px;
+  -webkit-transform: rotate(185deg);
+      -ms-transform: rotate(185deg);
+          transform: rotate(185deg);
+}
+
+.Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(2) {
+  width: 31px;
+  top: -53px;
+  left: -8px;
+  -webkit-transform: rotate(185deg);
+      -ms-transform: rotate(185deg);
+          transform: rotate(185deg);
+}
+
+.Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(3) {
+  width: 31px;
+  top: -34px;
+  left: -8px;
+  -webkit-transform: rotate(185deg);
+      -ms-transform: rotate(185deg);
+          transform: rotate(185deg);
+}
+
+.Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(4) {
+  width: 33px;
   top: -15px;
-  left: 377px;
-  -webkit-transform: rotateZ(-9deg);
-      -ms-transform: rotate(-9deg);
-          transform: rotateZ(-9deg);
-  height: 19rem;
+  left: -9px;
+  -webkit-transform: rotate(185deg);
+      -ms-transform: rotate(185deg);
+          transform: rotate(185deg);
 }
 
-.Roof__main__tile__column-24 {
+.Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(5) {
+  width: 34px;
+  top: 3px;
+  left: -9px;
+  -webkit-transform: rotate(186deg);
+      -ms-transform: rotate(186deg);
+          transform: rotate(186deg);
+}
+
+.Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(6) {
+  width: 33px;
+  top: 23px;
+  left: -9px;
+  -webkit-transform: rotate(186deg);
+      -ms-transform: rotate(186deg);
+          transform: rotate(186deg);
+}
+
+.Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(7) {
+  width: 34px;
+  top: 42px;
+  left: -10px;
+  -webkit-transform: rotate(186deg);
+      -ms-transform: rotate(186deg);
+          transform: rotate(186deg);
+}
+
+.Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(8) {
+  width: 35px;
+  top: 61px;
+  left: -10px;
+  -webkit-transform: rotate(186deg);
+      -ms-transform: rotate(186deg);
+          transform: rotate(186deg);
+}
+
+.Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(9) {
+  width: 37px;
+  top: 80px;
+  left: -12px;
+  -webkit-transform: rotate(186deg);
+      -ms-transform: rotate(186deg);
+          transform: rotate(186deg);
+}
+
+.Roof__main__tiles__column-19 .Roof__main__column__tile:last-child {
+  width: 38px;
+  top: 98px;
+  left: -17px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-20 {
   top: -15px;
-  left: 394px;
-  -webkit-transform: rotateZ(-14deg);
-      -ms-transform: rotate(-14deg);
-          transform: rotateZ(-14deg);
+  left: 320px;
+  -webkit-transform: rotateZ(-8deg);
+      -ms-transform: rotate(-8deg);
+          transform: rotateZ(-8deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-25 {
-  top: -18px;
-  left: 415px;
-  -webkit-transform: rotateZ(-19deg);
-      -ms-transform: rotate(-19deg);
-          transform: rotateZ(-19deg);
+.Roof__main__tiles__column-20 .Roof__main__column__tile:nth-child(1) {
+  width: 30px;
+  top: -70px;
+  left: -5px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-20 .Roof__main__column__tile:nth-child(2) {
+  width: 32px;
+  top: -53px;
+  left: -6px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-20 .Roof__main__column__tile:nth-child(3) {
+  width: 32px;
+  top: -34px;
+  left: -6px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-20 .Roof__main__column__tile:nth-child(4) {
+  width: 33px;
+  top: -14px;
+  left: -7px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-20 .Roof__main__column__tile:nth-child(5) {
+  width: 34px;
+  top: 3px;
+  left: -8px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-20 .Roof__main__column__tile:nth-child(6) {
+  width: 33px;
+  top: 23px;
+  left: -8px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-20 .Roof__main__column__tile:nth-child(7) {
+  width: 35px;
+  top: 42px;
+  left: -9px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-20 .Roof__main__column__tile:nth-child(8) {
+  width: 37px;
+  top: 61px;
+  left: -10px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-20 .Roof__main__column__tile:nth-child(9) {
+  width: 38px;
+  top: 81px;
+  left: -11px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-20 .Roof__main__column__tile:last-child {
+  width: 38px;
+  top: 98px;
+  left: -17px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-21 {
+  top: -14px;
+  left: 337px;
+  -webkit-transform: rotateZ(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotateZ(-10deg);
   height: 19rem;
 }
 
-.Roof__main__tile__column-26 {
+.Roof__main__tiles__column-21 .Roof__main__column__tile:nth-child(1) {
+  width: 30px;
+  top: -71px;
+  left: -3px;
+  -webkit-transform: rotate(190deg);
+      -ms-transform: rotate(190deg);
+          transform: rotate(190deg);
+}
+
+.Roof__main__tiles__column-21 .Roof__main__column__tile:nth-child(2) {
+  width: 33px;
+  top: -54px;
+  left: -5px;
+  -webkit-transform: rotate(190deg);
+      -ms-transform: rotate(190deg);
+          transform: rotate(190deg);
+}
+
+.Roof__main__tiles__column-21 .Roof__main__column__tile:nth-child(3) {
+  width: 33px;
+  top: -35px;
+  left: -5px;
+  -webkit-transform: rotate(190deg);
+      -ms-transform: rotate(190deg);
+          transform: rotate(190deg);
+}
+
+.Roof__main__tiles__column-21 .Roof__main__column__tile:nth-child(4) {
+  width: 33px;
+  top: -15px;
+  left: -5px;
+  -webkit-transform: rotate(190deg);
+      -ms-transform: rotate(190deg);
+          transform: rotate(190deg);
+}
+
+.Roof__main__tiles__column-21 .Roof__main__column__tile:nth-child(5) {
+  width: 34px;
+  top: 3px;
+  left: -6px;
+  -webkit-transform: rotate(190deg);
+      -ms-transform: rotate(190deg);
+          transform: rotate(190deg);
+}
+
+.Roof__main__tiles__column-21 .Roof__main__column__tile:nth-child(6) {
+  width: 35px;
+  top: 23px;
+  left: -7px;
+  -webkit-transform: rotate(190deg);
+      -ms-transform: rotate(190deg);
+          transform: rotate(190deg);
+}
+
+.Roof__main__tiles__column-21 .Roof__main__column__tile:nth-child(7) {
+  width: 35px;
+  top: 42px;
+  left: -9px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-21 .Roof__main__column__tile:nth-child(8) {
+  width: 37px;
+  top: 61px;
+  left: -10px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-21 .Roof__main__column__tile:nth-child(9) {
+  width: 38px;
+  top: 80px;
+  left: -11px;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-21 .Roof__main__column__tile:last-child {
+  width: 39px;
+  top: 98px;
+  left: -14px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(185deg);
+      -ms-transform: rotate(185deg);
+          transform: rotate(185deg);
+}
+
+.Roof__main__tiles__column-22 {
+  top: -14px;
+  left: 353px;
+  -webkit-transform: rotateZ(-12deg);
+      -ms-transform: rotate(-12deg);
+          transform: rotateZ(-12deg);
+  height: 19rem;
+}
+
+.Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(1) {
+  width: 29px;
+  top: -71px;
+  left: 0px;
+  -webkit-transform: rotate(193deg);
+      -ms-transform: rotate(193deg);
+          transform: rotate(193deg);
+}
+
+.Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(2) {
+  width: 31px;
+  top: -54px;
+  left: -1px;
+  -webkit-transform: rotate(193deg);
+      -ms-transform: rotate(193deg);
+          transform: rotate(193deg);
+}
+
+.Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(3) {
+  width: 32px;
+  top: -35px;
+  left: -2px;
+  -webkit-transform: rotate(193deg);
+      -ms-transform: rotate(193deg);
+          transform: rotate(193deg);
+}
+
+.Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(4) {
+  width: 32px;
+  top: -15px;
+  left: -2px;
+  -webkit-transform: rotate(193deg);
+      -ms-transform: rotate(193deg);
+          transform: rotate(193deg);
+}
+
+.Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(5) {
+  width: 34px;
+  top: 3px;
+  left: -3px;
+  -webkit-transform: rotate(193deg);
+      -ms-transform: rotate(193deg);
+          transform: rotate(193deg);
+}
+
+.Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(6) {
+  width: 34px;
+  top: 23px;
+  left: -4px;
+  -webkit-transform: rotate(193deg);
+      -ms-transform: rotate(193deg);
+          transform: rotate(193deg);
+}
+
+.Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(7) {
+  width: 35px;
+  top: 43px;
+  left: -4px;
+  -webkit-transform: rotate(193deg);
+      -ms-transform: rotate(193deg);
+          transform: rotate(193deg);
+}
+
+.Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(8) {
+  width: 36px;
+  top: 62px;
+  left: -5px;
+  -webkit-transform: rotate(193deg);
+      -ms-transform: rotate(193deg);
+          transform: rotate(193deg);
+}
+
+.Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(9) {
+  width: 37px;
+  top: 81px;
+  left: -6px;
+  -webkit-transform: rotate(193deg);
+      -ms-transform: rotate(193deg);
+          transform: rotate(193deg);
+}
+
+.Roof__main__tiles__column-22 .Roof__main__column__tile:last-child {
+  width: 37px;
+  top: 98px;
+  left: -13px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(185deg);
+      -ms-transform: rotate(185deg);
+          transform: rotate(185deg);
+}
+
+.Roof__main__tiles__column-23 {
+  top: -13px;
+  left: 370px;
+  -webkit-transform: rotateZ(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotateZ(-15deg);
+  height: 19rem;
+}
+
+.Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(1) {
+  width: 29px;
+  top: -72px;
+  left: 2px;
+  -webkit-transform: rotate(195deg);
+      -ms-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+.Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(2) {
+  width: 30px;
+  top: -56px;
+  left: 2px;
+  -webkit-transform: rotate(195deg);
+      -ms-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+.Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(3) {
+  width: 32px;
+  top: -37px;
+  left: 0px;
+  -webkit-transform: rotate(195deg);
+      -ms-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+.Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(4) {
+  width: 33px;
+  top: -16px;
+  left: -1px;
+  -webkit-transform: rotate(195deg);
+      -ms-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+.Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(5) {
+  width: 34px;
+  top: 2px;
+  left: -2px;
+  -webkit-transform: rotate(195deg);
+      -ms-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+.Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(6) {
+  width: 35px;
+  top: 23px;
+  left: -3px;
+  -webkit-transform: rotate(195deg);
+      -ms-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+.Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(7) {
+  width: 35px;
+  top: 42px;
+  left: -3px;
+  -webkit-transform: rotate(195deg);
+      -ms-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+.Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(8) {
+  width: 37px;
+  top: 61px;
+  left: -5px;
+  -webkit-transform: rotate(195deg);
+      -ms-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+.Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(9) {
+  width: 38px;
+  top: 81px;
+  left: -7px;
+  -webkit-transform: rotate(195deg);
+      -ms-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+.Roof__main__tiles__column-23 .Roof__main__column__tile:last-child {
+  width: 40px;
+  top: 96px;
+  left: -13px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(188deg);
+      -ms-transform: rotate(188deg);
+          transform: rotate(188deg);
+}
+
+.Roof__main__tiles__column-24 {
+  top: -15px;
+  left: 386px;
+  -webkit-transform: rotateZ(-18deg);
+      -ms-transform: rotate(-18deg);
+          transform: rotateZ(-18deg);
+  height: 19rem;
+}
+
+.Roof__main__tiles__column-24 .Roof__main__column__tile:nth-child(1) {
+  width: 29px;
+  top: -71px;
+  left: 6px;
+  -webkit-transform: rotate(199deg);
+      -ms-transform: rotate(199deg);
+          transform: rotate(199deg);
+}
+
+.Roof__main__tiles__column-24 .Roof__main__column__tile:nth-child(2) {
+  width: 32px;
+  top: -53px;
+  left: 4px;
+  -webkit-transform: rotate(199deg);
+      -ms-transform: rotate(199deg);
+          transform: rotate(199deg);
+}
+
+.Roof__main__tiles__column-24 .Roof__main__column__tile:nth-child(3) {
+  width: 32px;
+  top: -34px;
+  left: 3px;
+  -webkit-transform: rotate(199deg);
+      -ms-transform: rotate(199deg);
+          transform: rotate(199deg);
+}
+
+.Roof__main__tiles__column-24 .Roof__main__column__tile:nth-child(4) {
+  width: 33px;
+  top: -14px;
+  left: 1px;
+  -webkit-transform: rotate(198deg);
+      -ms-transform: rotate(198deg);
+          transform: rotate(198deg);
+}
+
+.Roof__main__tiles__column-24 .Roof__main__column__tile:nth-child(5) {
+  width: 34px;
+  top: 5px;
+  left: 0px;
+  -webkit-transform: rotate(198deg);
+      -ms-transform: rotate(198deg);
+          transform: rotate(198deg);
+}
+
+.Roof__main__tiles__column-24 .Roof__main__column__tile:nth-child(6) {
+  width: 35px;
+  top: 25px;
+  left: -1px;
+  -webkit-transform: rotate(198deg);
+      -ms-transform: rotate(198deg);
+          transform: rotate(198deg);
+}
+
+.Roof__main__tiles__column-24 .Roof__main__column__tile:nth-child(7) {
+  width: 35px;
+  top: 45px;
+  left: -2px;
+  -webkit-transform: rotate(198deg);
+      -ms-transform: rotate(198deg);
+          transform: rotate(198deg);
+}
+
+.Roof__main__tiles__column-24 .Roof__main__column__tile:nth-child(8) {
+  width: 38px;
+  top: 64px;
+  left: -4px;
+  -webkit-transform: rotate(198deg);
+      -ms-transform: rotate(198deg);
+          transform: rotate(198deg);
+}
+
+.Roof__main__tiles__column-24 .Roof__main__column__tile:nth-child(9) {
+  width: 39px;
+  top: 84px;
+  left: -5px;
+  -webkit-transform: rotate(198deg);
+      -ms-transform: rotate(198deg);
+          transform: rotate(198deg);
+}
+
+.Roof__main__tiles__column-24 .Roof__main__column__tile:last-child {
+  width: 37px;
+  top: 96px;
+  left: -14px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(185deg);
+      -ms-transform: rotate(185deg);
+          transform: rotate(185deg);
+}
+
+.Roof__main__tiles__column-25 {
   top: -20px;
-  left: 435px;
-  -webkit-transform: rotateZ(-24deg);
-      -ms-transform: rotate(-24deg);
-          transform: rotateZ(-24deg);
+  left: 395px;
+  -webkit-transform: rotateZ(-23deg);
+      -ms-transform: rotate(-23deg);
+          transform: rotateZ(-23deg);
   height: 19rem;
+}
+
+.Roof__main__tiles__column-25 .Roof__main__column__tile:nth-child(1) {
+  width: 32px;
+  top: 32px;
+  left: 7px;
+  -webkit-transform: rotate(203deg);
+      -ms-transform: rotate(203deg);
+          transform: rotate(203deg);
+}
+
+.Roof__main__tiles__column-25 .Roof__main__column__tile:nth-child(2) {
+  width: 32px;
+  top: 54px;
+  left: 6px;
+  -webkit-transform: rotate(203deg);
+      -ms-transform: rotate(203deg);
+          transform: rotate(203deg);
+}
+
+.Roof__main__tiles__column-25 .Roof__main__column__tile:nth-child(3) {
+  width: 36px;
+  top: 74px;
+  left: 3px;
+  -webkit-transform: rotate(203deg);
+      -ms-transform: rotate(203deg);
+          transform: rotate(203deg);
+}
+
+.Roof__main__tiles__column-25 .Roof__main__column__tile:nth-child(4) {
+  width: 37px;
+  top: 94px;
+  left: 1px;
+  -webkit-transform: rotate(203deg);
+      -ms-transform: rotate(203deg);
+          transform: rotate(203deg);
+}
+
+.Roof__main__tiles__column-25 .Roof__main__column__tile:last-child {
+  width: 37px;
+  top: 98px;
+  left: -16px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-26 {
+  top: -17px;
+  left: 407px;
+  -webkit-transform: rotateZ(-27deg);
+      -ms-transform: rotate(-27deg);
+          transform: rotateZ(-27deg);
+  height: 18rem;
+}
+
+.Roof__main__tiles__column-26 .Roof__main__column__tile:nth-child(1) {
+  width: 36px;
+  top: 73px;
+  left: 3px;
+  -webkit-transform: rotate(203deg);
+      -ms-transform: rotate(203deg);
+          transform: rotate(203deg);
+}
+
+.Roof__main__tiles__column-26 .Roof__main__column__tile:last-child {
+  width: 34px;
+  top: 88px;
+  left: -15px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Roof__main__tiles__column-27 {
+  top: -17px;
+  left: 407px;
+  -webkit-transform: rotateZ(-27deg);
+      -ms-transform: rotate(-27deg);
+          transform: rotateZ(-27deg);
+  height: 18rem;
+  border-right: none;
+}
+
+.Roof__main__tiles__column-27 .Roof__main__column__tile:last-child {
+  width: 34px;
+  top: 96px;
+  left: -34px;
+  border-color: #819b9a transparent transparent transparent;
+  -webkit-transform: rotate(129deg);
+      -ms-transform: rotate(129deg);
+          transform: rotate(129deg);
+}
+
+.Test {
+  position: absolute;
+  bottom: 172px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: red;
 }
 
 .Home-view {
@@ -915,5 +2843,6 @@ html {
   min-height: 100vh;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */

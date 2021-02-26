@@ -3,204 +3,1319 @@
     height: 14rem
     position: absolute
     top: 23rem
-    perspective: 1000
-
+    perspective: 1000px 
+    z-index: 1
     &__main
+        width: 100%
+        height: 100%
+        transform: rotateX(62deg)
+        &__edge 
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 10px
         &__top
             position: absolute
             width: 29rem
-            height: 6px
+            height: 16px
             border-radius: 3px
             top: 0
             left: 50%
-            transform: translateX(-50%)
+            transform: translateX(-50.5%)
             overflow: hidden
-    &__top-1
-        position: absolute
-        width: 100%
-        height: 3px
-        top: 0
-        left: 0
-        background-color: rgb(158,193,199)
-    &__top-2
-        @extend .Roof__top-1
-        top: 3px
-        background-color: rgb(99,126,133)
+            &__1
+                position: absolute
+                width: 100%
+                height: 8px
+                top: 0
+                left: 0
+                background-color: rgb(158,193,199)
+            &__2
+                @extend .Roof__main__top__1
+                top: 8px
+                background-color: rgb(99,126,133)
 
     &__main
         &__left__edge
             position: absolute
-            top: -4px
-            left: 92px
-            width: 5px
+            top: 13px
+            left: 100px
+            width: 8px
             height: 7rem
             background-color: #9ec1c7
-            transform: rotateZ(32deg)
+            transform: rotateZ(19deg)
             z-index: -1
             border-bottom-right-radius: 3px
         &__curve__left__edge
                 position: absolute
-                top: 0
-                left: -56px
+                top: 45px
+                left: -39px
                 width: 14.5rem
                 height: 10rem
-                border: solid 6px #9ec1c7
+                border: solid 9px #9ec1c7
                 border-color: #9ec1c7 transparent transparent transparent
-                border-radius: 320%/140px 100px 0 0
-                transform: rotate(142deg)
+                border-radius: 165%/107px 100px 0 0
+                transform: rotate(129deg)
         &__right__edge
             @extend .Roof__main__left__edge
             left: initial
-            right: 92px
-            transform: rotateZ(-32deg)
+            right: 100px
+            transform: rotateZ(-20deg)
             border-bottom-left-radius: 6px
         &__curve__right__edge
             @extend .Roof__main__curve__left__edge
-            top: 2px
+            top: 45px
             left: initial
-            right: -5.6rem
-            transform: rotate(-138deg) 
+            right: -38px
+            transform: rotate(-129deg) 
 
     &__main
 
-        &__tile
-            width: 51.4rem
-            height: 17.5rem
+        &__tiles
+            width: 48rem
+            height: 19rem
             position: absolute
-            top: -18px
-            left: -8px
-            background-color: cadetblue
+            top: 27px
+            left: 7px
             z-index: -5
-            display: flex
-            transform: rotateX(40deg)
-            clip-path: polygon(22% 0%, 78% 0%, 100% 100%, 0% 100%)
-
+            //clip-path: polygon(22% 0%, 79% 0%, 100% 100%, 0% 100%)
             &__column
                 position: absolute
                 width: 13px
                 height: 15rem
                 border-right: 3px solid rgb(60,64,76)
+        &__column__tile
+            position: absolute
+            width: 32px
+            height: 10rem
+            border: solid 4px rgb(89,97,108)
+            border-color: rgb(89,97,108) transparent transparent transparent
+            border-radius: 150%/115px 100px 0 0
+            transform: rotate(161deg)
 
+    &__main__tiles
+            
             &__column-2
-                top: 16px
-                left: 45px
-                transform: rotateZ(25deg)
+                top: 10px
+                left: 48px
+                transform: rotateZ(27deg)
+                height: 15rem
+                .Roof__main__column__tile
+                    &:last-child
+                        width: 27px
+                        top: 61px
+                        left: 23px
+                        border-color: #819b9a transparent transparent transparent
+                        transform: rotate(221deg)
             &__column-3
-                top: 20px
+                top: 17px
                 left: 57px
-                transform: rotateZ(22deg)
+                transform: rotateZ(23deg)
+                height: 15rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 33px
+                        top: 36px
+                        left: -27px
+                        transform: rotate(160deg)
+                    &:last-child
+                        width: 34px
+                        top: 54px
+                        left: -5px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(191deg)
             &__column-4
                 top: -7px
                 left: 74px
-                transform: rotateZ(19deg)
+                transform: rotateZ(18deg)
                 height: 18rem
-            &__column-5
-                top: -15px
-                left: 89px
-                transform: rotateZ(17deg)
-                height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 35px
+                        top: -2px
+                        left: -27px
+                        transform: rotate(163deg)
+                    &:nth-child(2)
+                        width: 35px
+                        top: 19px
+                        left: -27px
+                        transform: rotate(163deg)
+                    &:nth-child(3)
+                        width: 35px
+                        top: 39px
+                        left: -27px
+                        transform: rotate(163deg)
+                    &:nth-child(4)
+                        width: 37px
+                        top: 59px
+                        left: -28px
+                        transform: rotate(163deg)
+                    &:nth-child(5)
+                        width: 38px
+                        top: 79px
+                        left: -29px
+                        transform: rotate(163deg)
+                    &:last-child
+                        width: 38px
+                        top: 85px
+                        left: -9px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(191deg)
             &__column-6
                 top: -15px
-                left: 103px
-                transform: rotateZ(15deg)
+                left: 92px
+                transform: rotateZ(16deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 32px
+                        top: -70px
+                        left: -23px
+                        transform: rotate(165deg)
+                    &:nth-child(2)
+                        width: 33px
+                        top: -52px
+                        left: -24px
+                        transform: rotate(165deg)
+                    &:nth-child(3)
+                        width: 33px
+                        top: -34px
+                        left: -24px
+                        transform: rotate(165deg)
+                    &:nth-child(4)
+                        width: 33px
+                        top: -13px
+                        left: -24px
+                        transform: rotate(165deg)
+                    &:nth-child(5)
+                        width: 35px
+                        top: 6px
+                        left: -25px
+                        transform: rotate(165deg)
+                    &:nth-child(6)
+                        width: 35px
+                        top: 27px
+                        left: -25px
+                        transform: rotate(165deg)
+                    &:nth-child(7)
+                        width: 35px
+                        top: 46px
+                        left: -25px
+                        transform: rotate(165deg)
+                    &:nth-child(8)
+                        width: 36px
+                        top: 65px
+                        left: -26px
+                        transform: rotate(165deg)
+                    &:nth-child(9)
+                        width: 39px
+                        top: 86px
+                        left: -29px
+                        transform: rotate(165deg)
+                    &:last-child
+                        width: 38px
+                        top: 97px
+                        left: -18px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
             &__column-7
                 top: -15px
-                left: 117px
-                transform: rotateZ(12deg)
+                left: 109px
+                transform: rotateZ(13deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 29px
+                        top: -69px
+                        left: -21px
+                        transform: rotate(165deg) 
+                    &:nth-child(2)
+                        width: 30px
+                        top: -52px
+                        left: -21px
+                        transform: rotate(165deg)
+                    &:nth-child(3)
+                        width: 30px
+                        top: -33px
+                        left: -22px
+                        transform: rotate(165deg)
+                    &:nth-child(4)
+                        width: 33px
+                        top: -13px
+                        left: -24px
+                        transform: rotate(165deg)
+                    &:nth-child(5)
+                        width: 34px
+                        top: 6px
+                        left: -25px
+                        transform: rotate(165deg)
+                    &:nth-child(6)
+                        width: 34px
+                        top: 27px
+                        left: -25px
+                        transform: rotate(165deg)
+                    &:nth-child(7)
+                        width: 35px
+                        top: 46px
+                        left: -25px
+                        transform: rotate(165deg)
+                    &:nth-child(8)
+                        width: 36px
+                        top: 64px
+                        left: -26px
+                        transform: rotate(165deg)
+                    &:nth-child(9)
+                        width: 38px
+                        top: 85px
+                        left: -28px
+                        transform: rotate(165deg)
+                    &:last-child
+                        width: 39px
+                        top: 98px
+                        left: -19px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
             &__column-8
                 top: -15px
-                left: 131px
-                transform: rotateZ(9deg)
+                left: 125px
+                transform: rotateZ(10deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 28px
+                        top: -70px
+                        left: -16px
+                        transform: rotate(170deg)
+                    &:nth-child(2)
+                        width: 30px
+                        top: -52px
+                        left: -18px
+                        transform: rotate(170deg)
+                    &:nth-child(3)
+                        width: 30px
+                        top: -34px
+                        left: -18px
+                        transform: rotate(170deg)
+                    &:nth-child(4)
+                        width: 31px
+                        top: -14px
+                        left: -19px
+                        transform: rotate(170deg)
+                    &:nth-child(5)
+                        width: 32px
+                        top: 4px
+                        left: -17px
+                        transform: rotate(173deg)
+                    &:nth-child(6)
+                        width: 34px
+                        top: 24px
+                        left: -19px
+                        transform: rotate(173deg)
+                    &:nth-child(7)
+                        width: 35px
+                        top: 44px
+                        left: -20px
+                        transform: rotate(173deg)
+                    &:nth-child(8)
+                        width: 36px
+                        top: 62px
+                        left: -21px
+                        transform: rotate(173deg)
+                    &:nth-child(9)
+                        width: 38px
+                        top: 82px
+                        left: -23px
+                        transform: rotate(173deg)
+                    &:last-child
+                        width: 38px
+                        top: 98px
+                        left: -18px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
             &__column-9
                 top: -15px
-                left: 146px
-                transform: rotateZ(6deg)
+                left: 142px
+                transform: rotateZ(7deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 28px
+                        top: -69px
+                        left: -14px
+                        transform: rotate(173deg)
+                    &:nth-child(2)
+                        width: 28px
+                        top: -71px
+                        left: -17px
+                        transform: rotate(173deg)
+                    &:nth-child(2)
+                        width: 32px
+                        top: -52px
+                        left: -17px
+                        transform: rotate(173deg)
+                    &:nth-child(3)
+                        width: 32px
+                        top: -34px
+                        left: -17px
+                        transform: rotate(173deg)
+                    &:nth-child(4)
+                        width: 33px
+                        top: -14px
+                        left: -18px
+                        transform: rotate(173deg)
+                    &:nth-child(5)
+                        width: 34px
+                        top: 4px
+                        left: -19px
+                        transform: rotate(173deg)
+                    &:nth-child(6)
+                        width: 34px
+                        top: 24px
+                        left: -20px
+                        transform: rotate(173deg)
+                    &:nth-child(7)
+                        width: 36px
+                        top: 44px
+                        left: -21px
+                        transform: rotate(173deg)
+                    &:nth-child(8)
+                        width: 37px
+                        top: 62px
+                        left: -22px
+                        transform: rotate(173deg)
+                    &:nth-child(9)
+                        width: 38px
+                        top: 81px
+                        left: -23px
+                        transform: rotate(173deg)
+                    &:last-child
+                        width: 40px
+                        top: 98px
+                        left: -20px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
             &__column-10
                 top: -15px
                 left: 159px
-                transform: rotateZ(3deg)
+                transform: rotateZ(4deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 28px
+                        top: -69px 
+                        left: -14px
+                        transform: rotate(173deg)
+                    &:nth-child(2)
+                        width: 32px
+                        top: -52px
+                        left: -17px
+                        transform: rotate(173deg)
+                    &:nth-child(3)
+                        width: 32px
+                        top: -34px
+                        left: -17px
+                        transform: rotate(173deg)
+                    &:nth-child(4)
+                        width: 32px
+                        top: -14px
+                        left: -17px
+                        transform: rotate(173deg)
+                    &:nth-child(5)
+                        width: 33px
+                        top: 4px
+                        left: -16px
+                        transform: rotate(176deg)
+                    &:nth-child(6)
+                        width: 34px
+                        top: 24px
+                        left: -17px
+                        transform: rotate(176deg)
+                    &:nth-child(7)
+                        width: 35px
+                        top: 43px
+                        left: -17px
+                        transform: rotate(176deg)
+                    &:nth-child(8)
+                        width: 37px
+                        top: 61px
+                        left: -19px
+                        transform: rotate(176deg)
+                    &:nth-child(9)
+                        width: 38px
+                        top: 80px
+                        left: -20px
+                        transform: rotate(176deg)
+                    &:last-child
+                        width: 41px
+                        top: 98px
+                        left: -20px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
             &__column-11
                 top: -15px
-                left: 172px
-                transform: rotateZ(0deg)
+                left: 175px
+                transform: rotateZ(1deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 28px
+                        top: -69px
+                        left: -9px
+                        transform: rotate(180deg)
+                    &:nth-child(2)
+                        width: 29px
+                        top: -52px
+                        left: -10px
+                        transform: rotate(180deg)
+                    &:nth-child(3)
+                        width: 29px
+                        top: -34px
+                        left: -10px
+                        transform: rotate(180deg)
+                    &:nth-child(4)
+                        width: 32px
+                        top: -15px
+                        left: -12px
+                        transform: rotate(180deg)
+                    &:nth-child(5)
+                        width: 33px
+                        top: 3px
+                        left: -13px
+                        transform: rotate(180deg)
+                    &:nth-child(6)
+                        width: 34px
+                        top: 24px
+                        left: -17px
+                        transform: rotate(176deg)
+                    &:nth-child(7)
+                        width: 34px
+                        top: 42px
+                        left: -15px
+                        transform: rotate(180deg)
+                    &:nth-child(8)
+                        width: 36px
+                        top: 60px
+                        left: -16px
+                        transform: rotate(180deg)
+                    &:nth-child(9)
+                        width: 38px
+                        top: 80px
+                        left: -17px
+                        transform: rotate(180deg)
+                    &:last-child
+                        width: 38px
+                        top: 98px
+                        left: -18px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
             &__column-12
                 top: -15px
-                left: 187px
+                left: 191px
                 transform: rotateZ(-1deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 27px
+                        top: -69px
+                        left: -7px
+                        transform: rotate(182deg)
+                    &:nth-child(2)
+                        width: 31px
+                        top: -52px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(3)
+                        width: 31px
+                        top: -34px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(4)
+                        width: 32px
+                        top: -15px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(5)
+                        width: 33px
+                        top: 3px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(6)
+                        width: 34px
+                        top: 23px
+                        left: -12px
+                        transform: rotate(182deg)
+                    &:nth-child(7)
+                        width: 34px
+                        top: 42px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(8)
+                        width: 36px
+                        top: 60px
+                        left: -14px
+                        transform: rotate(182deg)
+                    &:nth-child(9)
+                        width: 37px
+                        top: 80px
+                        left: -15px
+                        transform: rotate(182deg)
+                    &:last-child
+                        width: 37px
+                        top: 98px
+                        left: -18px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
             &__column-13
                 top: -15px
-                left: 203px
+                left: 207px
                 transform: rotateZ(-1deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 32px
+                        top: -69px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(2)
+                        width: 30px
+                        top: -52px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(3)
+                        width: 30px
+                        top: -34px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(4)
+                        width: 32px
+                        top: -15px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(5)
+                        width: 33px
+                        top: 3px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(6)
+                        width: 33px
+                        top: 23px
+                        left: -12px
+                        transform: rotate(182deg)
+                    &:nth-child(7)
+                        width: 34px
+                        top: 42px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(8)
+                        width: 34px
+                        top: 60px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(9)
+                        width: 33px
+                        top: 80px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:last-child
+                        width: 33px
+                        top: 98px
+                        left: -12px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
             &__column-14
                 top: -15px
-                left: 221px
+                left: 223px
                 transform: rotateZ(-1deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 32px
+                        top: -69px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(2)
+                        width: 30px
+                        top: -52px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(3)
+                        width: 30px
+                        top: -34px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(4)
+                        width: 32px
+                        top: -15px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(5)
+                        width: 33px
+                        top: 3px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(6)
+                        width: 33px
+                        top: 23px
+                        left: -12px
+                        transform: rotate(182deg)
+                    &:nth-child(7)
+                        width: 34px
+                        top: 42px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(8)
+                        width: 34px
+                        top: 60px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(9)
+                        width: 33px
+                        top: 80px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:last-child
+                        width: 33px
+                        top: 98px
+                        left: -13px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
             &__column-15
                 top: -15px
-                left: 238px
-                transform: rotateZ(0deg)
+                left: 239px
+                transform: rotateZ(-1deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 32px
+                        top: -69px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(2)
+                        width: 30px
+                        top: -52px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(3)
+                        width: 30px
+                        top: -34px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(4)
+                        width: 32px
+                        top: -15px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(5)
+                        width: 33px
+                        top: 3px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(6)
+                        width: 33px
+                        top: 23px
+                        left: -12px
+                        transform: rotate(182deg)
+                    &:nth-child(7)
+                        width: 34px
+                        top: 42px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(8)
+                        width: 34px
+                        top: 60px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(9)
+                        width: 33px
+                        top: 80px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:last-child
+                        width: 34px
+                        top: 98px
+                        left: -13px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
             &__column-16
                 top: -15px
                 left: 255px
-                transform: rotateZ(0deg)
+                transform: rotateZ(-2deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 32px
+                        top: -69px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(2)
+                        width: 31px
+                        top: -53px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(3)
+                        width: 31px
+                        top: -34px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(4)
+                        width: 32px
+                        top: -15px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(5)
+                        width: 33px
+                        top: 3px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(6)
+                        width: 33px
+                        top: 23px
+                        left: -12px
+                        transform: rotate(182deg)
+                    &:nth-child(7)
+                        width: 34px
+                        top: 42px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(8)
+                        width: 34px
+                        top: 60px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(9)
+                        width: 34px
+                        top: 80px
+                        left: -12px
+                        transform: rotate(182deg)
+                    &:last-child
+                        width: 34px
+                        top: 98px
+                        left: -14px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
             &__column-17
                 top: -15px
-                left: 274px
-                transform: rotateZ(0deg)
-                height: 19rem
-            &__column-18
-                top: -15px
-                left: 292px
-                transform: rotateZ(0deg)
-                height: 19rem
-            &__column-19
-                top: -15px
-                left: 309px
-                transform: rotateZ(0deg)
-                height: 19rem
-            &__column-20
-                top: -15px
-                left: 326px
-                transform: rotateZ(-1deg)
-                height: 19rem
-            &__column-21
-                top: -15px
-                left: 343px
+                left: 270px
                 transform: rotateZ(-3deg)
                 height: 19rem
-            &__column-22
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 31px
+                        top: -69px
+                        left: -9px
+                        transform: rotate(182deg)
+                    &:nth-child(2)
+                        width: 31px
+                        top: -53px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(3)
+                        width: 31px
+                        top: -34px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(4)
+                        width: 32px
+                        top: -15px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(5)
+                        width: 33px
+                        top: 3px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(6)
+                        width: 33px
+                        top: 23px
+                        left: -12px
+                        transform: rotate(182deg)
+                    &:nth-child(7)
+                        width: 34px
+                        top: 42px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(8)
+                        width: 34px
+                        top: 60px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(9)
+                        width: 34px
+                        top: 80px
+                        left: -12px
+                        transform: rotate(182deg)
+                    &:last-child
+                        width: 35px
+                        top: 98px
+                        left: -14px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
+            &__column-18
                 top: -15px
-                left: 360px
+                left: 286px
+                transform: rotateZ(-4deg)
+                height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 32px
+                        top: -70px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(2)
+                        width: 31px
+                        top: -53px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(3)
+                        width: 31px
+                        top: -34px
+                        left: -10px
+                        transform: rotate(182deg)
+                    &:nth-child(4)
+                        width: 32px
+                        top: -15px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(5)
+                        width: 33px
+                        top: 3px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(6)
+                        width: 32px
+                        top: 23px
+                        left: -11px
+                        transform: rotate(182deg)
+                    &:nth-child(7)
+                        width: 34px
+                        top: 42px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(8)
+                        width: 34px
+                        top: 60px
+                        left: -13px
+                        transform: rotate(182deg)
+                    &:nth-child(9)
+                        width: 34px
+                        top: 80px
+                        left: -12px
+                        transform: rotate(182deg)
+                    &:last-child
+                        width: 35px
+                        top: 98px
+                        left: -14px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
+            &__column-19
+                top: -15px
+                left: 303px
                 transform: rotateZ(-6deg)
                 height: 19rem
-            &__column-23
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 30px
+                        top: -70px
+                        left: -7px
+                        transform: rotate(185deg)
+                    &:nth-child(2)
+                        width: 31px
+                        top: -53px
+                        left: -8px
+                        transform: rotate(185deg)
+                    &:nth-child(3)
+                        width: 31px
+                        top: -34px
+                        left: -8px
+                        transform: rotate(185deg)
+                    &:nth-child(4)
+                        width: 33px
+                        top: -15px
+                        left: -9px
+                        transform: rotate(185deg)
+                    &:nth-child(5)
+                        width: 34px
+                        top: 3px
+                        left: -9px
+                        transform: rotate(186deg)
+                    &:nth-child(6)
+                        width: 33px
+                        top: 23px
+                        left: -9px
+                        transform: rotate(186deg)
+                    &:nth-child(7)
+                        width: 34px
+                        top: 42px
+                        left: -10px
+                        transform: rotate(186deg)
+                    &:nth-child(8)
+                        width: 35px
+                        top: 61px
+                        left: -10px
+                        transform: rotate(186deg)
+                    &:nth-child(9)
+                        width: 37px
+                        top: 80px
+                        left: -12px
+                        transform: rotate(186deg)
+                    &:last-child
+                        width: 38px
+                        top: 98px
+                        left: -17px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
+            &__column-20
                 top: -15px
-                left: 377px
-                transform: rotateZ(-9deg)
+                left: 320px
+                transform: rotateZ(-8deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 30px
+                        top: -70px
+                        left: -5px
+                        transform: rotate(188deg)
+                    &:nth-child(2)
+                        width: 32px
+                        top: -53px
+                        left: -6px
+                        transform: rotate(188deg)
+                    &:nth-child(3)
+                        width: 32px
+                        top: -34px
+                        left: -6px
+                        transform: rotate(188deg)
+                    &:nth-child(4)
+                        width: 33px
+                        top: -14px
+                        left: -7px
+                        transform: rotate(188deg)
+                    &:nth-child(5)
+                        width: 34px
+                        top: 3px
+                        left: -8px
+                        transform: rotate(188deg)
+                    &:nth-child(6)
+                        width: 33px
+                        top: 23px
+                        left: -8px
+                        transform: rotate(188deg)
+                    &:nth-child(7)
+                        width: 35px
+                        top: 42px
+                        left: -9px
+                        transform: rotate(188deg)
+                    &:nth-child(8)
+                        width: 37px
+                        top: 61px
+                        left: -10px
+                        transform: rotate(188deg)
+                    &:nth-child(9)
+                        width: 38px
+                        top: 81px
+                        left: -11px
+                        transform: rotate(188deg)
+                    &:last-child
+                        width: 38px
+                        top: 98px
+                        left: -17px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
+            &__column-21
+                top: -14px
+                left: 337px
+                transform: rotateZ(-10deg)
+                height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 30px
+                        top: -71px
+                        left: -3px
+                        transform: rotate(190deg)
+                    &:nth-child(2)
+                        width: 33px
+                        top: -54px
+                        left: -5px
+                        transform: rotate(190deg)
+                    &:nth-child(3)
+                        width: 33px
+                        top: -35px
+                        left: -5px
+                        transform: rotate(190deg)
+                    &:nth-child(4)
+                        width: 33px
+                        top: -15px
+                        left: -5px
+                        transform: rotate(190deg)
+                    &:nth-child(5)
+                        width: 34px
+                        top: 3px
+                        left: -6px
+                        transform: rotate(190deg)
+                    &:nth-child(6)
+                        width: 35px
+                        top: 23px
+                        left: -7px
+                        transform: rotate(190deg)
+                    &:nth-child(7)
+                        width: 35px
+                        top: 42px
+                        left: -9px
+                        transform: rotate(188deg)
+                    &:nth-child(8)
+                        width: 37px
+                        top: 61px
+                        left: -10px
+                        transform: rotate(188deg)
+                    &:nth-child(9)
+                        width: 38px
+                        top: 80px
+                        left: -11px
+                        transform: rotate(188deg) 
+                    &:last-child
+                        width: 39px
+                        top: 98px
+                        left: -14px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(185deg)
+            &__column-22
+                top: -14px
+                left: 353px
+                transform: rotateZ(-12deg)
+                height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 29px
+                        top: -71px
+                        left: 0px
+                        transform: rotate(193deg)
+                    &:nth-child(2)
+                        width: 31px
+                        top: -54px
+                        left: -1px
+                        transform: rotate(193deg)
+                    &:nth-child(3)
+                        width: 32px
+                        top: -35px
+                        left: -2px
+                        transform: rotate(193deg)
+                    &:nth-child(4)
+                        width: 32px
+                        top: -15px
+                        left: -2px
+                        transform: rotate(193deg)
+                    &:nth-child(5)
+                        width: 34px
+                        top: 3px
+                        left: -3px
+                        transform: rotate(193deg)
+                    &:nth-child(6)
+                        width: 34px
+                        top: 23px
+                        left: -4px
+                        transform: rotate(193deg)
+                    &:nth-child(7)
+                        width: 35px
+                        top: 43px
+                        left: -4px
+                        transform: rotate(193deg)
+                    &:nth-child(8)
+                        width: 36px
+                        top: 62px
+                        left: -5px
+                        transform: rotate(193deg)
+                    &:nth-child(9)
+                        width: 37px
+                        top: 81px
+                        left: -6px
+                        transform: rotate(193deg)
+                    &:last-child
+                        width: 37px
+                        top: 98px
+                        left: -13px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(185deg)
+            &__column-23
+                top: -13px
+                left: 370px
+                transform: rotateZ(-15deg)
+                height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 29px
+                        top: -72px
+                        left: 2px
+                        transform: rotate(195deg)
+                    &:nth-child(2)
+                        width: 30px
+                        top: -56px
+                        left: 2px
+                        transform: rotate(195deg)
+                    &:nth-child(3)
+                        width: 32px
+                        top: -37px
+                        left: 0px
+                        transform: rotate(195deg)
+                    &:nth-child(4)
+                        width: 33px
+                        top: -16px
+                        left: -1px
+                        transform: rotate(195deg)
+                    &:nth-child(5)
+                        width: 34px
+                        top: 2px
+                        left: -2px
+                        transform: rotate(195deg)
+                    &:nth-child(6)
+                        width: 35px
+                        top: 23px
+                        left: -3px
+                        transform: rotate(195deg)
+                    &:nth-child(7)
+                        width: 35px
+                        top: 42px
+                        left: -3px
+                        transform: rotate(195deg)
+                    &:nth-child(8)
+                        width: 37px
+                        top: 61px
+                        left: -5px
+                        transform: rotate(195deg)
+                    &:nth-child(9)
+                        width: 38px
+                        top: 81px
+                        left: -7px
+                        transform: rotate(195deg)
+                    &:last-child
+                        width: 40px
+                        top: 96px
+                        left: -13px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(188deg)
             &__column-24
                 top: -15px
-                left: 394px
-                transform: rotateZ(-14deg)
+                left: 386px
+                transform: rotateZ(-18deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 29px
+                        top: -71px
+                        left: 6px
+                        transform: rotate(199deg)
+                    &:nth-child(2)
+                        width: 32px
+                        top: -53px
+                        left: 4px
+                        transform: rotate(199deg)
+                    &:nth-child(3)
+                        width: 32px
+                        top: -34px
+                        left: 3px
+                        transform: rotate(199deg)
+                    &:nth-child(4)
+                        width: 33px
+                        top: -14px
+                        left: 1px
+                        transform: rotate(198deg)
+                    &:nth-child(5)
+                        width: 34px
+                        top: 5px
+                        left: 0px
+                        transform: rotate(198deg)
+                    &:nth-child(6)
+                        width: 35px
+                        top: 25px
+                        left: -1px
+                        transform: rotate(198deg)
+                    &:nth-child(7)
+                        width: 35px
+                        top: 45px
+                        left: -2px
+                        transform: rotate(198deg)
+                    &:nth-child(8)
+                        width: 38px
+                        top: 64px
+                        left: -4px
+                        transform: rotate(198deg)
+                    &:nth-child(9)
+                        width: 39px
+                        top: 84px
+                        left: -5px
+                        transform: rotate(198deg)
+                    &:last-child
+                        width: 37px
+                        top: 96px
+                        left: -14px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(185deg)
             &__column-25
-                top: -18px
-                left: 415px
-                transform: rotateZ(-19deg)
-                height: 19rem
-            &__column-26
                 top: -20px
-                left: 435px
-                transform: rotateZ(-24deg)
+                left: 395px
+                transform: rotateZ(-23deg)
                 height: 19rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 32px
+                        top: 32px
+                        left: 7px
+                        transform: rotate(203deg)
+                    &:nth-child(2)
+                        width: 32px
+                        top: 54px
+                        left: 6px
+                        transform: rotate(203deg)
+                    &:nth-child(3)
+                        width: 36px
+                        top: 74px
+                        left: 3px
+                        transform: rotate(203deg)
+                    &:nth-child(4)
+                        width: 37px
+                        top: 94px
+                        left: 1px
+                        transform: rotate(203deg)
+                    &:last-child
+                        width: 37px
+                        top: 98px
+                        left: -16px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
+            &__column-26
+                top: -17px
+                left: 407px
+                transform: rotateZ(-27deg)
+                height: 18rem
+                .Roof__main__column__tile
+                    &:nth-child(1)
+                        width: 36px
+                        top: 73px
+                        left: 3px
+                        transform: rotate(203deg)
+                    &:last-child
+                        width: 34px
+                        top: 88px
+                        left: -15px
+                        border-color: rgb(129, 155, 154) transparent transparent transparent
+                        transform: rotate(180deg)
+            &__column-27
+                top: -17px
+                left: 407px
+                transform: rotateZ(-27deg)
+                height: 18rem
+                border-right: none
+                .Roof__main__column__tile
+                    &:last-child
+                        width: 34px
+                        top: 96px
+                        left: -34px
+                        border-color: #819b9a transparent transparent transparent
+                        transform: rotate(129deg)
+
+.Test
+    position: absolute
+    bottom: 172px
+    left: 0
+    width: 100%
+    height: 2px
+    background-color: red
