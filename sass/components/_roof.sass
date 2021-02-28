@@ -3,8 +3,11 @@
     height: 14rem
     position: absolute
     top: 23rem
+    left: 50%
+    transform: translate(-50%)
     perspective: 1000px 
     z-index: 1
+    // Roof edges
     &__main
         width: 100%
         height: 100%
@@ -21,7 +24,7 @@
             border-radius: 3px
             top: 0
             left: 50%
-            transform: translateX(-50.5%)
+            transform: translateX(-50%)
             overflow: hidden
             &__1
                 position: absolute
@@ -39,38 +42,40 @@
         &__left__edge
             position: absolute
             top: 13px
-            left: 100px
-            width: 8px
+            left: 102px
+            width: 6px
             height: 7rem
             background-color: #9ec1c7
-            transform: rotateZ(19deg)
+            transform: rotateZ(18deg)
             z-index: -1
             border-bottom-right-radius: 3px
         &__curve__left__edge
                 position: absolute
-                top: 45px
-                left: -39px
+                top: 48px
+                left: -42px
                 width: 14.5rem
                 height: 10rem
-                border: solid 9px #9ec1c7
+                border: solid 8px #9ec1c7
                 border-color: #9ec1c7 transparent transparent transparent
-                border-radius: 165%/107px 100px 0 0
-                transform: rotate(129deg)
+                border-radius: 150%/60px 115px 0 0
+                transform: rotate(126deg)
         &__right__edge
             @extend .Roof__main__left__edge
             left: initial
-            right: 100px
-            transform: rotateZ(-20deg)
+            right: 104px
+            transform: rotateZ(-18deg)
             border-bottom-left-radius: 6px
         &__curve__right__edge
             @extend .Roof__main__curve__left__edge
-            top: 45px
+            top: 44px
             left: initial
-            right: -38px
-            transform: rotate(-129deg) 
-
+            right: -35px
+            transform: rotate(-131deg) 
+            border-radius: 150%/93px 86px 0 0 
+            width: 14rem
+    
+    // Roof main tiles
     &__main
-
         &__tiles
             width: 48rem
             height: 19rem
@@ -96,31 +101,31 @@
     &__main__tiles
             
             &__column-2
-                top: 10px
-                left: 48px
+                top: 130px
+                left: 22px
                 transform: rotateZ(27deg)
-                height: 15rem
+                height: 2rem
                 .Roof__main__column__tile
                     &:last-child
                         width: 27px
-                        top: 61px
-                        left: 23px
+                        top: -66px
+                        left: 22px
                         border-color: #819b9a transparent transparent transparent
                         transform: rotate(221deg)
             &__column-3
-                top: 17px
-                left: 57px
+                top: 109px
+                left: 39px
                 transform: rotateZ(23deg)
-                height: 15rem
+                height: 5rem
                 .Roof__main__column__tile
                     &:nth-child(1)
                         width: 33px
-                        top: 36px
+                        top: -60px
                         left: -27px
                         transform: rotate(160deg)
                     &:last-child
                         width: 34px
-                        top: 54px
+                        top: -44px
                         left: -5px
                         border-color: rgb(129, 155, 154) transparent transparent transparent
                         transform: rotate(191deg)
@@ -131,29 +136,24 @@
                 height: 18rem
                 .Roof__main__column__tile
                     &:nth-child(1)
-                        width: 35px
-                        top: -2px
-                        left: -27px
+                        width: 33px
+                        top: 17px
+                        left: -25px
                         transform: rotate(163deg)
                     &:nth-child(2)
-                        width: 35px
-                        top: 19px
-                        left: -27px
-                        transform: rotate(163deg)
-                    &:nth-child(3)
                         width: 35px
                         top: 39px
                         left: -27px
                         transform: rotate(163deg)
-                    &:nth-child(4)
+                    &:nth-child(3)
                         width: 37px
                         top: 59px
                         left: -28px
                         transform: rotate(163deg)
-                    &:nth-child(5)
-                        width: 38px
-                        top: 79px
-                        left: -29px
+                    &:nth-child(4)
+                        width: 39px
+                        top: 78px
+                        left: -30px
                         transform: rotate(163deg)
                     &:last-child
                         width: 38px
@@ -203,10 +203,10 @@
                         left: -25px
                         transform: rotate(165deg)
                     &:nth-child(8)
-                        width: 36px
+                        width: 39px
                         top: 65px
                         left: -26px
-                        transform: rotate(165deg)
+                        transform: rotate(168deg)
                     &:nth-child(9)
                         width: 39px
                         top: 86px
@@ -227,7 +227,7 @@
                     &:nth-child(1)
                         width: 29px
                         top: -69px
-                        left: -21px
+                        left: -20px
                         transform: rotate(165deg) 
                     &:nth-child(2)
                         width: 30px
@@ -235,7 +235,7 @@
                         left: -21px
                         transform: rotate(165deg)
                     &:nth-child(3)
-                        width: 30px
+                        width: 31px
                         top: -33px
                         left: -22px
                         transform: rotate(165deg)
@@ -255,14 +255,14 @@
                         left: -25px
                         transform: rotate(165deg)
                     &:nth-child(7)
-                        width: 35px
+                        width: 37px
                         top: 46px
-                        left: -25px
+                        left: -27px
                         transform: rotate(165deg)
                     &:nth-child(8)
-                        width: 36px
+                        width: 40px
                         top: 64px
-                        left: -26px
+                        left: -29px
                         transform: rotate(165deg)
                     &:nth-child(9)
                         width: 38px
@@ -322,7 +322,7 @@
                         left: -21px
                         transform: rotate(173deg)
                     &:nth-child(9)
-                        width: 38px
+                        width: 39px
                         top: 82px
                         left: -23px
                         transform: rotate(173deg)
@@ -364,12 +364,12 @@
                         left: -18px
                         transform: rotate(173deg)
                     &:nth-child(5)
-                        width: 34px
+                        width: 35px
                         top: 4px
                         left: -19px
                         transform: rotate(173deg)
                     &:nth-child(6)
-                        width: 34px
+                        width: 35px
                         top: 24px
                         left: -20px
                         transform: rotate(173deg)
@@ -384,7 +384,7 @@
                         left: -22px
                         transform: rotate(173deg)
                     &:nth-child(9)
-                        width: 38px
+                        width: 39px
                         top: 81px
                         left: -23px
                         transform: rotate(173deg)
@@ -401,9 +401,9 @@
                 height: 19rem
                 .Roof__main__column__tile
                     &:nth-child(1)
-                        width: 28px
+                        width: 31px
                         top: -69px 
-                        left: -14px
+                        left: -16px
                         transform: rotate(173deg)
                     &:nth-child(2)
                         width: 32px
@@ -418,12 +418,12 @@
                     &:nth-child(4)
                         width: 32px
                         top: -14px
-                        left: -17px
+                        left: -18px
                         transform: rotate(173deg)
                     &:nth-child(5)
-                        width: 33px
+                        width: 34px
                         top: 4px
-                        left: -16px
+                        left: -17px
                         transform: rotate(176deg)
                     &:nth-child(6)
                         width: 34px
@@ -431,14 +431,14 @@
                         left: -17px
                         transform: rotate(176deg)
                     &:nth-child(7)
-                        width: 35px
+                        width: 37px
                         top: 43px
-                        left: -17px
+                        left: -19px
                         transform: rotate(176deg)
                     &:nth-child(8)
-                        width: 37px
+                        width: 39px
                         top: 61px
-                        left: -19px
+                        left: -21px
                         transform: rotate(176deg)
                     &:nth-child(9)
                         width: 38px
@@ -488,7 +488,7 @@
                         left: -17px
                         transform: rotate(176deg)
                     &:nth-child(7)
-                        width: 34px
+                        width: 36px
                         top: 42px
                         left: -15px
                         transform: rotate(180deg)
@@ -545,7 +545,7 @@
                         left: -12px
                         transform: rotate(182deg)
                     &:nth-child(7)
-                        width: 34px
+                        width: 35px
                         top: 42px
                         left: -13px
                         transform: rotate(182deg)
@@ -604,12 +604,12 @@
                     &:nth-child(7)
                         width: 34px
                         top: 42px
-                        left: -13px
+                        left: -12px
                         transform: rotate(182deg)
                     &:nth-child(8)
                         width: 34px
                         top: 60px
-                        left: -13px
+                        left: -12px
                         transform: rotate(182deg)
                     &:nth-child(9)
                         width: 33px
@@ -656,17 +656,17 @@
                     &:nth-child(6)
                         width: 33px
                         top: 23px
-                        left: -12px
+                        left: -11px
                         transform: rotate(182deg)
                     &:nth-child(7)
                         width: 34px
                         top: 42px
-                        left: -13px
+                        left: -12px
                         transform: rotate(182deg)
                     &:nth-child(8)
                         width: 34px
                         top: 60px
-                        left: -13px
+                        left: -12px
                         transform: rotate(182deg)
                     &:nth-child(9)
                         width: 33px
@@ -718,12 +718,12 @@
                     &:nth-child(7)
                         width: 34px
                         top: 42px
-                        left: -13px
+                        left: -12px
                         transform: rotate(182deg)
                     &:nth-child(8)
                         width: 34px
                         top: 60px
-                        left: -13px
+                        left: -12px
                         transform: rotate(182deg)
                     &:nth-child(9)
                         width: 33px
@@ -775,7 +775,7 @@
                     &:nth-child(7)
                         width: 34px
                         top: 42px
-                        left: -13px
+                        left: -12px
                         transform: rotate(182deg)
                     &:nth-child(8)
                         width: 34px
@@ -825,19 +825,19 @@
                         left: -11px
                         transform: rotate(182deg)
                     &:nth-child(6)
-                        width: 33px
+                        width: 30px
                         top: 23px
-                        left: -12px
+                        left: -10px
                         transform: rotate(182deg)
                     &:nth-child(7)
-                        width: 34px
+                        width: 31px
                         top: 42px
-                        left: -13px
+                        left: -10px
                         transform: rotate(182deg)
                     &:nth-child(8)
-                        width: 34px
+                        width: 33px
                         top: 60px
-                        left: -13px
+                        left: -11px
                         transform: rotate(182deg)
                     &:nth-child(9)
                         width: 34px
@@ -877,7 +877,7 @@
                         left: -11px
                         transform: rotate(182deg)
                     &:nth-child(5)
-                        width: 33px
+                        width: 32px
                         top: 3px
                         left: -11px
                         transform: rotate(182deg)
@@ -899,7 +899,7 @@
                     &:nth-child(9)
                         width: 34px
                         top: 80px
-                        left: -12px
+                        left: -13px
                         transform: rotate(182deg)
                     &:last-child
                         width: 35px
@@ -931,32 +931,32 @@
                     &:nth-child(4)
                         width: 33px
                         top: -15px
-                        left: -9px
+                        left: -10px
                         transform: rotate(185deg)
                     &:nth-child(5)
                         width: 34px
                         top: 3px
-                        left: -9px
+                        left: -10px
                         transform: rotate(186deg)
                     &:nth-child(6)
                         width: 33px
                         top: 23px
-                        left: -9px
+                        left: -10px
                         transform: rotate(186deg)
                     &:nth-child(7)
-                        width: 34px
+                        width: 36px
                         top: 42px
-                        left: -10px
+                        left: -11px
                         transform: rotate(186deg)
                     &:nth-child(8)
-                        width: 35px
+                        width: 36px
                         top: 61px
-                        left: -10px
+                        left: -12px
                         transform: rotate(186deg)
                     &:nth-child(9)
                         width: 37px
                         top: 80px
-                        left: -12px
+                        left: -13px
                         transform: rotate(186deg)
                     &:last-child
                         width: 38px
@@ -1008,7 +1008,7 @@
                     &:nth-child(8)
                         width: 37px
                         top: 61px
-                        left: -10px
+                        left: -11px
                         transform: rotate(188deg)
                     &:nth-child(9)
                         width: 38px
@@ -1065,8 +1065,8 @@
                     &:nth-child(8)
                         width: 37px
                         top: 61px
-                        left: -10px
-                        transform: rotate(188deg)
+                        left: -9px
+                        transform: rotate(190deg)
                     &:nth-child(9)
                         width: 38px
                         top: 80px
@@ -1117,17 +1117,17 @@
                     &:nth-child(7)
                         width: 35px
                         top: 43px
-                        left: -4px
+                        left: -5px
                         transform: rotate(193deg)
                     &:nth-child(8)
                         width: 36px
                         top: 62px
-                        left: -5px
+                        left: -6px
                         transform: rotate(193deg)
                     &:nth-child(9)
-                        width: 37px
+                        width: 39px
                         top: 81px
-                        left: -6px
+                        left: -7px
                         transform: rotate(193deg)
                     &:last-child
                         width: 37px
@@ -1143,13 +1143,13 @@
                 .Roof__main__column__tile
                     &:nth-child(1)
                         width: 29px
-                        top: -72px
+                        top: -73px
                         left: 2px
                         transform: rotate(195deg)
                     &:nth-child(2)
-                        width: 30px
+                        width: 31px
                         top: -56px
-                        left: 2px
+                        left: 1px
                         transform: rotate(195deg)
                     &:nth-child(3)
                         width: 32px
@@ -1174,12 +1174,12 @@
                     &:nth-child(7)
                         width: 35px
                         top: 42px
-                        left: -3px
+                        left: -4px
                         transform: rotate(195deg)
                     &:nth-child(8)
                         width: 37px
                         top: 61px
-                        left: -5px
+                        left: -6px
                         transform: rotate(195deg)
                     &:nth-child(9)
                         width: 38px
@@ -1201,7 +1201,7 @@
                     &:nth-child(1)
                         width: 29px
                         top: -71px
-                        left: 6px
+                        left: 5px
                         transform: rotate(199deg)
                     &:nth-child(2)
                         width: 32px
@@ -1229,9 +1229,9 @@
                         left: -1px
                         transform: rotate(198deg)
                     &:nth-child(7)
-                        width: 35px
+                        width: 37px
                         top: 45px
-                        left: -2px
+                        left: -3px
                         transform: rotate(198deg)
                     &:nth-child(8)
                         width: 38px
@@ -1250,51 +1250,51 @@
                         border-color: rgb(129, 155, 154) transparent transparent transparent
                         transform: rotate(185deg)
             &__column-25
-                top: -20px
-                left: 395px
+                top: 102px
+                left: 419px
                 transform: rotateZ(-23deg)
-                height: 19rem
+                height: 6rem
                 .Roof__main__column__tile
                     &:nth-child(1)
                         width: 32px
-                        top: 32px
-                        left: 7px
-                        transform: rotate(203deg)
+                        top: -94px
+                        left: 8px
+                        transform: rotate(205deg)
                     &:nth-child(2)
-                        width: 32px
-                        top: 54px
-                        left: 6px
-                        transform: rotate(203deg)
+                        width: 31px
+                        top: -74px
+                        left: 7px
+                        transform: rotate(205deg)
                     &:nth-child(3)
-                        width: 36px
-                        top: 74px
-                        left: 3px
-                        transform: rotate(203deg)
+                        width: 34px
+                        top: -54px
+                        left: 4px
+                        transform: rotate(205deg)
                     &:nth-child(4)
                         width: 37px
-                        top: 94px
-                        left: 1px
-                        transform: rotate(203deg)
+                        top: -37px
+                        left: -2px
+                        transform: rotate(200deg)
                     &:last-child
                         width: 37px
-                        top: 98px
+                        top: -31px
                         left: -16px
                         border-color: rgb(129, 155, 154) transparent transparent transparent
                         transform: rotate(180deg)
             &__column-26
-                top: -17px
-                left: 407px
+                top: 134px
+                left: 443px
                 transform: rotateZ(-27deg)
-                height: 18rem
+                height: 2rem
                 .Roof__main__column__tile
                     &:nth-child(1)
                         width: 36px
-                        top: 73px
-                        left: 3px
+                        top: -89px
+                        left: 2px
                         transform: rotate(203deg)
                     &:last-child
-                        width: 34px
-                        top: 88px
+                        width: 36px
+                        top: -74px
                         left: -15px
                         border-color: rgb(129, 155, 154) transparent transparent transparent
                         transform: rotate(180deg)
@@ -1306,16 +1306,61 @@
                 border-right: none
                 .Roof__main__column__tile
                     &:last-child
-                        width: 34px
-                        top: 96px
-                        left: -34px
+                        width: 29px
+                        top: 94px
+                        left: -32px
                         border-color: #819b9a transparent transparent transparent
-                        transform: rotate(129deg)
+                        transform: rotate(132deg)
+
+    &__second
+        width: 226px
+        height: 107px
+        position: absolute
+        top: 30px
+        left: 97px
+        border: 1px solid orange
+        &__left__edge
+            position: absolute
+            top: -27px
+            left: -55px
+            width: 175px
+            height: 10rem
+            border: solid 10px rgb(128,148,157)
+            border-color: rgb(128,148,157) transparent transparent transparent
+            border-radius: 150%/65px 115px 0 0
+            transform: rotate(141deg)
+        &__right__edge
+            @extend .Roof__second__left__edge
+            top: -27px
+            left: 104px
+            transform: rotateX(-180deg) rotateZ(-39deg)
+        &__left__edge-1
+            @extend .Roof__second__left__edge
+            width: 166px
+            top: -35px
+            left: -54px
+            border: solid 2px #9ec1c7
+            border-color: #9ec1c7 transparent transparent transparent
+            border-radius: 165%/50px 112px 0 0
+            transform: rotate(140deg)
+        &__right__edge-1
+            @extend .Roof__second__left__edge
+            width: 165px
+            top: -35px
+            left: 113px
+            border: solid 2px #9ec1c7
+            border-color: #9ec1c7 transparent transparent transparent
+            border-radius: 170%/49px 110px 0 0
+            transform: rotate(140deg)
+            transform: rotateX(-180deg) rotateZ(-40deg)
+            
+
 
 .Test
     position: absolute
     bottom: 172px
-    left: 0
+    left: -40px
     width: 100%
     height: 2px
     background-color: red
+    transform: rotate(90deg)

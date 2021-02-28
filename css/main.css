@@ -585,6 +585,10 @@ html {
   height: 14rem;
   position: absolute;
   top: 23rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
   -webkit-perspective: 1000px;
           perspective: 1000px;
   z-index: 1;
@@ -611,9 +615,9 @@ html {
   border-radius: 3px;
   top: 0;
   left: 50%;
-  -webkit-transform: translateX(-50.5%);
-      -ms-transform: translateX(-50.5%);
-          transform: translateX(-50.5%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   overflow: hidden;
 }
 
@@ -634,47 +638,49 @@ html {
 .Roof__main__left__edge, .Roof__main__right__edge {
   position: absolute;
   top: 13px;
-  left: 100px;
-  width: 8px;
+  left: 102px;
+  width: 6px;
   height: 7rem;
   background-color: #9ec1c7;
-  -webkit-transform: rotateZ(19deg);
-      -ms-transform: rotate(19deg);
-          transform: rotateZ(19deg);
+  -webkit-transform: rotateZ(18deg);
+      -ms-transform: rotate(18deg);
+          transform: rotateZ(18deg);
   z-index: -1;
   border-bottom-right-radius: 3px;
 }
 
 .Roof__main__curve__left__edge, .Roof__main__curve__right__edge {
   position: absolute;
-  top: 45px;
-  left: -39px;
+  top: 48px;
+  left: -42px;
   width: 14.5rem;
   height: 10rem;
-  border: solid 9px #9ec1c7;
+  border: solid 8px #9ec1c7;
   border-color: #9ec1c7 transparent transparent transparent;
-  border-radius: 165%/107px 100px 0 0;
-  -webkit-transform: rotate(129deg);
-      -ms-transform: rotate(129deg);
-          transform: rotate(129deg);
+  border-radius: 150%/60px 115px 0 0;
+  -webkit-transform: rotate(126deg);
+      -ms-transform: rotate(126deg);
+          transform: rotate(126deg);
 }
 
 .Roof__main__right__edge {
   left: initial;
-  right: 100px;
-  -webkit-transform: rotateZ(-20deg);
-      -ms-transform: rotate(-20deg);
-          transform: rotateZ(-20deg);
+  right: 104px;
+  -webkit-transform: rotateZ(-18deg);
+      -ms-transform: rotate(-18deg);
+          transform: rotateZ(-18deg);
   border-bottom-left-radius: 6px;
 }
 
 .Roof__main__curve__right__edge {
-  top: 45px;
+  top: 44px;
   left: initial;
-  right: -38px;
-  -webkit-transform: rotate(-129deg);
-      -ms-transform: rotate(-129deg);
-          transform: rotate(-129deg);
+  right: -35px;
+  -webkit-transform: rotate(-131deg);
+      -ms-transform: rotate(-131deg);
+          transform: rotate(-131deg);
+  border-radius: 150%/93px 86px 0 0;
+  width: 14rem;
 }
 
 .Roof__main__tiles {
@@ -706,18 +712,18 @@ html {
 }
 
 .Roof__main__tiles__column-2 {
-  top: 10px;
-  left: 48px;
+  top: 130px;
+  left: 22px;
   -webkit-transform: rotateZ(27deg);
       -ms-transform: rotate(27deg);
           transform: rotateZ(27deg);
-  height: 15rem;
+  height: 2rem;
 }
 
 .Roof__main__tiles__column-2 .Roof__main__column__tile:last-child {
   width: 27px;
-  top: 61px;
-  left: 23px;
+  top: -66px;
+  left: 22px;
   border-color: #819b9a transparent transparent transparent;
   -webkit-transform: rotate(221deg);
       -ms-transform: rotate(221deg);
@@ -725,17 +731,17 @@ html {
 }
 
 .Roof__main__tiles__column-3 {
-  top: 17px;
-  left: 57px;
+  top: 109px;
+  left: 39px;
   -webkit-transform: rotateZ(23deg);
       -ms-transform: rotate(23deg);
           transform: rotateZ(23deg);
-  height: 15rem;
+  height: 5rem;
 }
 
 .Roof__main__tiles__column-3 .Roof__main__column__tile:nth-child(1) {
   width: 33px;
-  top: 36px;
+  top: -60px;
   left: -27px;
   -webkit-transform: rotate(160deg);
       -ms-transform: rotate(160deg);
@@ -744,7 +750,7 @@ html {
 
 .Roof__main__tiles__column-3 .Roof__main__column__tile:last-child {
   width: 34px;
-  top: 54px;
+  top: -44px;
   left: -5px;
   border-color: #819b9a transparent transparent transparent;
   -webkit-transform: rotate(191deg);
@@ -762,24 +768,15 @@ html {
 }
 
 .Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(1) {
-  width: 35px;
-  top: -2px;
-  left: -27px;
+  width: 33px;
+  top: 17px;
+  left: -25px;
   -webkit-transform: rotate(163deg);
       -ms-transform: rotate(163deg);
           transform: rotate(163deg);
 }
 
 .Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(2) {
-  width: 35px;
-  top: 19px;
-  left: -27px;
-  -webkit-transform: rotate(163deg);
-      -ms-transform: rotate(163deg);
-          transform: rotate(163deg);
-}
-
-.Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(3) {
   width: 35px;
   top: 39px;
   left: -27px;
@@ -788,7 +785,7 @@ html {
           transform: rotate(163deg);
 }
 
-.Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(4) {
+.Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(3) {
   width: 37px;
   top: 59px;
   left: -28px;
@@ -797,10 +794,10 @@ html {
           transform: rotate(163deg);
 }
 
-.Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(5) {
-  width: 38px;
-  top: 79px;
-  left: -29px;
+.Roof__main__tiles__column-4 .Roof__main__column__tile:nth-child(4) {
+  width: 39px;
+  top: 78px;
+  left: -30px;
   -webkit-transform: rotate(163deg);
       -ms-transform: rotate(163deg);
           transform: rotate(163deg);
@@ -889,12 +886,12 @@ html {
 }
 
 .Roof__main__tiles__column-6 .Roof__main__column__tile:nth-child(8) {
-  width: 36px;
+  width: 39px;
   top: 65px;
   left: -26px;
-  -webkit-transform: rotate(165deg);
-      -ms-transform: rotate(165deg);
-          transform: rotate(165deg);
+  -webkit-transform: rotate(168deg);
+      -ms-transform: rotate(168deg);
+          transform: rotate(168deg);
 }
 
 .Roof__main__tiles__column-6 .Roof__main__column__tile:nth-child(9) {
@@ -928,7 +925,7 @@ html {
 .Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(1) {
   width: 29px;
   top: -69px;
-  left: -21px;
+  left: -20px;
   -webkit-transform: rotate(165deg);
       -ms-transform: rotate(165deg);
           transform: rotate(165deg);
@@ -944,7 +941,7 @@ html {
 }
 
 .Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(3) {
-  width: 30px;
+  width: 31px;
   top: -33px;
   left: -22px;
   -webkit-transform: rotate(165deg);
@@ -980,18 +977,18 @@ html {
 }
 
 .Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(7) {
-  width: 35px;
+  width: 37px;
   top: 46px;
-  left: -25px;
+  left: -27px;
   -webkit-transform: rotate(165deg);
       -ms-transform: rotate(165deg);
           transform: rotate(165deg);
 }
 
 .Roof__main__tiles__column-7 .Roof__main__column__tile:nth-child(8) {
-  width: 36px;
+  width: 40px;
   top: 64px;
-  left: -26px;
+  left: -29px;
   -webkit-transform: rotate(165deg);
       -ms-transform: rotate(165deg);
           transform: rotate(165deg);
@@ -1098,7 +1095,7 @@ html {
 }
 
 .Roof__main__tiles__column-8 .Roof__main__column__tile:nth-child(9) {
-  width: 38px;
+  width: 39px;
   top: 82px;
   left: -23px;
   -webkit-transform: rotate(173deg);
@@ -1171,7 +1168,7 @@ html {
 }
 
 .Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(5) {
-  width: 34px;
+  width: 35px;
   top: 4px;
   left: -19px;
   -webkit-transform: rotate(173deg);
@@ -1180,7 +1177,7 @@ html {
 }
 
 .Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(6) {
-  width: 34px;
+  width: 35px;
   top: 24px;
   left: -20px;
   -webkit-transform: rotate(173deg);
@@ -1207,7 +1204,7 @@ html {
 }
 
 .Roof__main__tiles__column-9 .Roof__main__column__tile:nth-child(9) {
-  width: 38px;
+  width: 39px;
   top: 81px;
   left: -23px;
   -webkit-transform: rotate(173deg);
@@ -1235,9 +1232,9 @@ html {
 }
 
 .Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(1) {
-  width: 28px;
+  width: 31px;
   top: -69px;
-  left: -14px;
+  left: -16px;
   -webkit-transform: rotate(173deg);
       -ms-transform: rotate(173deg);
           transform: rotate(173deg);
@@ -1264,16 +1261,16 @@ html {
 .Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(4) {
   width: 32px;
   top: -14px;
-  left: -17px;
+  left: -18px;
   -webkit-transform: rotate(173deg);
       -ms-transform: rotate(173deg);
           transform: rotate(173deg);
 }
 
 .Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(5) {
-  width: 33px;
+  width: 34px;
   top: 4px;
-  left: -16px;
+  left: -17px;
   -webkit-transform: rotate(176deg);
       -ms-transform: rotate(176deg);
           transform: rotate(176deg);
@@ -1289,18 +1286,18 @@ html {
 }
 
 .Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(7) {
-  width: 35px;
+  width: 37px;
   top: 43px;
-  left: -17px;
+  left: -19px;
   -webkit-transform: rotate(176deg);
       -ms-transform: rotate(176deg);
           transform: rotate(176deg);
 }
 
 .Roof__main__tiles__column-10 .Roof__main__column__tile:nth-child(8) {
-  width: 37px;
+  width: 39px;
   top: 61px;
-  left: -19px;
+  left: -21px;
   -webkit-transform: rotate(176deg);
       -ms-transform: rotate(176deg);
           transform: rotate(176deg);
@@ -1389,7 +1386,7 @@ html {
 }
 
 .Roof__main__tiles__column-11 .Roof__main__column__tile:nth-child(7) {
-  width: 34px;
+  width: 36px;
   top: 42px;
   left: -15px;
   -webkit-transform: rotate(180deg);
@@ -1489,7 +1486,7 @@ html {
 }
 
 .Roof__main__tiles__column-12 .Roof__main__column__tile:nth-child(7) {
-  width: 34px;
+  width: 35px;
   top: 42px;
   left: -13px;
   -webkit-transform: rotate(182deg);
@@ -1591,7 +1588,7 @@ html {
 .Roof__main__tiles__column-13 .Roof__main__column__tile:nth-child(7) {
   width: 34px;
   top: 42px;
-  left: -13px;
+  left: -12px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
@@ -1600,7 +1597,7 @@ html {
 .Roof__main__tiles__column-13 .Roof__main__column__tile:nth-child(8) {
   width: 34px;
   top: 60px;
-  left: -13px;
+  left: -12px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
@@ -1682,7 +1679,7 @@ html {
 .Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(6) {
   width: 33px;
   top: 23px;
-  left: -12px;
+  left: -11px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
@@ -1691,7 +1688,7 @@ html {
 .Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(7) {
   width: 34px;
   top: 42px;
-  left: -13px;
+  left: -12px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
@@ -1700,7 +1697,7 @@ html {
 .Roof__main__tiles__column-14 .Roof__main__column__tile:nth-child(8) {
   width: 34px;
   top: 60px;
-  left: -13px;
+  left: -12px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
@@ -1791,7 +1788,7 @@ html {
 .Roof__main__tiles__column-15 .Roof__main__column__tile:nth-child(7) {
   width: 34px;
   top: 42px;
-  left: -13px;
+  left: -12px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
@@ -1800,7 +1797,7 @@ html {
 .Roof__main__tiles__column-15 .Roof__main__column__tile:nth-child(8) {
   width: 34px;
   top: 60px;
-  left: -13px;
+  left: -12px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
@@ -1891,7 +1888,7 @@ html {
 .Roof__main__tiles__column-16 .Roof__main__column__tile:nth-child(7) {
   width: 34px;
   top: 42px;
-  left: -13px;
+  left: -12px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
@@ -1980,27 +1977,27 @@ html {
 }
 
 .Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(6) {
-  width: 33px;
+  width: 30px;
   top: 23px;
-  left: -12px;
+  left: -10px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
 }
 
 .Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(7) {
-  width: 34px;
+  width: 31px;
   top: 42px;
-  left: -13px;
+  left: -10px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
 }
 
 .Roof__main__tiles__column-17 .Roof__main__column__tile:nth-child(8) {
-  width: 34px;
+  width: 33px;
   top: 60px;
-  left: -13px;
+  left: -11px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
@@ -2071,7 +2068,7 @@ html {
 }
 
 .Roof__main__tiles__column-18 .Roof__main__column__tile:nth-child(5) {
-  width: 33px;
+  width: 32px;
   top: 3px;
   left: -11px;
   -webkit-transform: rotate(182deg);
@@ -2109,7 +2106,7 @@ html {
 .Roof__main__tiles__column-18 .Roof__main__column__tile:nth-child(9) {
   width: 34px;
   top: 80px;
-  left: -12px;
+  left: -13px;
   -webkit-transform: rotate(182deg);
       -ms-transform: rotate(182deg);
           transform: rotate(182deg);
@@ -2164,7 +2161,7 @@ html {
 .Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(4) {
   width: 33px;
   top: -15px;
-  left: -9px;
+  left: -10px;
   -webkit-transform: rotate(185deg);
       -ms-transform: rotate(185deg);
           transform: rotate(185deg);
@@ -2173,7 +2170,7 @@ html {
 .Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(5) {
   width: 34px;
   top: 3px;
-  left: -9px;
+  left: -10px;
   -webkit-transform: rotate(186deg);
       -ms-transform: rotate(186deg);
           transform: rotate(186deg);
@@ -2182,25 +2179,25 @@ html {
 .Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(6) {
   width: 33px;
   top: 23px;
-  left: -9px;
+  left: -10px;
   -webkit-transform: rotate(186deg);
       -ms-transform: rotate(186deg);
           transform: rotate(186deg);
 }
 
 .Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(7) {
-  width: 34px;
+  width: 36px;
   top: 42px;
-  left: -10px;
+  left: -11px;
   -webkit-transform: rotate(186deg);
       -ms-transform: rotate(186deg);
           transform: rotate(186deg);
 }
 
 .Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(8) {
-  width: 35px;
+  width: 36px;
   top: 61px;
-  left: -10px;
+  left: -12px;
   -webkit-transform: rotate(186deg);
       -ms-transform: rotate(186deg);
           transform: rotate(186deg);
@@ -2209,7 +2206,7 @@ html {
 .Roof__main__tiles__column-19 .Roof__main__column__tile:nth-child(9) {
   width: 37px;
   top: 80px;
-  left: -12px;
+  left: -13px;
   -webkit-transform: rotate(186deg);
       -ms-transform: rotate(186deg);
           transform: rotate(186deg);
@@ -2300,7 +2297,7 @@ html {
 .Roof__main__tiles__column-20 .Roof__main__column__tile:nth-child(8) {
   width: 37px;
   top: 61px;
-  left: -10px;
+  left: -11px;
   -webkit-transform: rotate(188deg);
       -ms-transform: rotate(188deg);
           transform: rotate(188deg);
@@ -2400,10 +2397,10 @@ html {
 .Roof__main__tiles__column-21 .Roof__main__column__tile:nth-child(8) {
   width: 37px;
   top: 61px;
-  left: -10px;
-  -webkit-transform: rotate(188deg);
-      -ms-transform: rotate(188deg);
-          transform: rotate(188deg);
+  left: -9px;
+  -webkit-transform: rotate(190deg);
+      -ms-transform: rotate(190deg);
+          transform: rotate(190deg);
 }
 
 .Roof__main__tiles__column-21 .Roof__main__column__tile:nth-child(9) {
@@ -2491,7 +2488,7 @@ html {
 .Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(7) {
   width: 35px;
   top: 43px;
-  left: -4px;
+  left: -5px;
   -webkit-transform: rotate(193deg);
       -ms-transform: rotate(193deg);
           transform: rotate(193deg);
@@ -2500,16 +2497,16 @@ html {
 .Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(8) {
   width: 36px;
   top: 62px;
-  left: -5px;
+  left: -6px;
   -webkit-transform: rotate(193deg);
       -ms-transform: rotate(193deg);
           transform: rotate(193deg);
 }
 
 .Roof__main__tiles__column-22 .Roof__main__column__tile:nth-child(9) {
-  width: 37px;
+  width: 39px;
   top: 81px;
-  left: -6px;
+  left: -7px;
   -webkit-transform: rotate(193deg);
       -ms-transform: rotate(193deg);
           transform: rotate(193deg);
@@ -2536,7 +2533,7 @@ html {
 
 .Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(1) {
   width: 29px;
-  top: -72px;
+  top: -73px;
   left: 2px;
   -webkit-transform: rotate(195deg);
       -ms-transform: rotate(195deg);
@@ -2544,9 +2541,9 @@ html {
 }
 
 .Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(2) {
-  width: 30px;
+  width: 31px;
   top: -56px;
-  left: 2px;
+  left: 1px;
   -webkit-transform: rotate(195deg);
       -ms-transform: rotate(195deg);
           transform: rotate(195deg);
@@ -2591,7 +2588,7 @@ html {
 .Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(7) {
   width: 35px;
   top: 42px;
-  left: -3px;
+  left: -4px;
   -webkit-transform: rotate(195deg);
       -ms-transform: rotate(195deg);
           transform: rotate(195deg);
@@ -2600,7 +2597,7 @@ html {
 .Roof__main__tiles__column-23 .Roof__main__column__tile:nth-child(8) {
   width: 37px;
   top: 61px;
-  left: -5px;
+  left: -6px;
   -webkit-transform: rotate(195deg);
       -ms-transform: rotate(195deg);
           transform: rotate(195deg);
@@ -2637,7 +2634,7 @@ html {
 .Roof__main__tiles__column-24 .Roof__main__column__tile:nth-child(1) {
   width: 29px;
   top: -71px;
-  left: 6px;
+  left: 5px;
   -webkit-transform: rotate(199deg);
       -ms-transform: rotate(199deg);
           transform: rotate(199deg);
@@ -2689,9 +2686,9 @@ html {
 }
 
 .Roof__main__tiles__column-24 .Roof__main__column__tile:nth-child(7) {
-  width: 35px;
+  width: 37px;
   top: 45px;
-  left: -2px;
+  left: -3px;
   -webkit-transform: rotate(198deg);
       -ms-transform: rotate(198deg);
           transform: rotate(198deg);
@@ -2726,53 +2723,53 @@ html {
 }
 
 .Roof__main__tiles__column-25 {
-  top: -20px;
-  left: 395px;
+  top: 102px;
+  left: 419px;
   -webkit-transform: rotateZ(-23deg);
       -ms-transform: rotate(-23deg);
           transform: rotateZ(-23deg);
-  height: 19rem;
+  height: 6rem;
 }
 
 .Roof__main__tiles__column-25 .Roof__main__column__tile:nth-child(1) {
   width: 32px;
-  top: 32px;
-  left: 7px;
-  -webkit-transform: rotate(203deg);
-      -ms-transform: rotate(203deg);
-          transform: rotate(203deg);
+  top: -94px;
+  left: 8px;
+  -webkit-transform: rotate(205deg);
+      -ms-transform: rotate(205deg);
+          transform: rotate(205deg);
 }
 
 .Roof__main__tiles__column-25 .Roof__main__column__tile:nth-child(2) {
-  width: 32px;
-  top: 54px;
-  left: 6px;
-  -webkit-transform: rotate(203deg);
-      -ms-transform: rotate(203deg);
-          transform: rotate(203deg);
+  width: 31px;
+  top: -74px;
+  left: 7px;
+  -webkit-transform: rotate(205deg);
+      -ms-transform: rotate(205deg);
+          transform: rotate(205deg);
 }
 
 .Roof__main__tiles__column-25 .Roof__main__column__tile:nth-child(3) {
-  width: 36px;
-  top: 74px;
-  left: 3px;
-  -webkit-transform: rotate(203deg);
-      -ms-transform: rotate(203deg);
-          transform: rotate(203deg);
+  width: 34px;
+  top: -54px;
+  left: 4px;
+  -webkit-transform: rotate(205deg);
+      -ms-transform: rotate(205deg);
+          transform: rotate(205deg);
 }
 
 .Roof__main__tiles__column-25 .Roof__main__column__tile:nth-child(4) {
   width: 37px;
-  top: 94px;
-  left: 1px;
-  -webkit-transform: rotate(203deg);
-      -ms-transform: rotate(203deg);
-          transform: rotate(203deg);
+  top: -37px;
+  left: -2px;
+  -webkit-transform: rotate(200deg);
+      -ms-transform: rotate(200deg);
+          transform: rotate(200deg);
 }
 
 .Roof__main__tiles__column-25 .Roof__main__column__tile:last-child {
   width: 37px;
-  top: 98px;
+  top: -31px;
   left: -16px;
   border-color: #819b9a transparent transparent transparent;
   -webkit-transform: rotate(180deg);
@@ -2781,26 +2778,26 @@ html {
 }
 
 .Roof__main__tiles__column-26 {
-  top: -17px;
-  left: 407px;
+  top: 134px;
+  left: 443px;
   -webkit-transform: rotateZ(-27deg);
       -ms-transform: rotate(-27deg);
           transform: rotateZ(-27deg);
-  height: 18rem;
+  height: 2rem;
 }
 
 .Roof__main__tiles__column-26 .Roof__main__column__tile:nth-child(1) {
   width: 36px;
-  top: 73px;
-  left: 3px;
+  top: -89px;
+  left: 2px;
   -webkit-transform: rotate(203deg);
       -ms-transform: rotate(203deg);
           transform: rotate(203deg);
 }
 
 .Roof__main__tiles__column-26 .Roof__main__column__tile:last-child {
-  width: 34px;
-  top: 88px;
+  width: 36px;
+  top: -74px;
   left: -15px;
   border-color: #819b9a transparent transparent transparent;
   -webkit-transform: rotate(180deg);
@@ -2819,22 +2816,81 @@ html {
 }
 
 .Roof__main__tiles__column-27 .Roof__main__column__tile:last-child {
-  width: 34px;
-  top: 96px;
-  left: -34px;
+  width: 29px;
+  top: 94px;
+  left: -32px;
   border-color: #819b9a transparent transparent transparent;
-  -webkit-transform: rotate(129deg);
-      -ms-transform: rotate(129deg);
-          transform: rotate(129deg);
+  -webkit-transform: rotate(132deg);
+      -ms-transform: rotate(132deg);
+          transform: rotate(132deg);
+}
+
+.Roof__second {
+  width: 226px;
+  height: 107px;
+  position: absolute;
+  top: 30px;
+  left: 97px;
+  border: 1px solid orange;
+}
+
+.Roof__second__left__edge, .Roof__second__right__edge, .Roof__second__left__edge-1, .Roof__second__right__edge-1 {
+  position: absolute;
+  top: -27px;
+  left: -55px;
+  width: 175px;
+  height: 10rem;
+  border: solid 10px #80949d;
+  border-color: #80949d transparent transparent transparent;
+  border-radius: 150%/65px 115px 0 0;
+  -webkit-transform: rotate(141deg);
+      -ms-transform: rotate(141deg);
+          transform: rotate(141deg);
+}
+
+.Roof__second__right__edge {
+  top: -27px;
+  left: 104px;
+  -webkit-transform: rotateX(-180deg) rotateZ(-39deg);
+          transform: rotateX(-180deg) rotateZ(-39deg);
+}
+
+.Roof__second__left__edge-1 {
+  width: 166px;
+  top: -35px;
+  left: -54px;
+  border: solid 2px #9ec1c7;
+  border-color: #9ec1c7 transparent transparent transparent;
+  border-radius: 165%/50px 112px 0 0;
+  -webkit-transform: rotate(140deg);
+      -ms-transform: rotate(140deg);
+          transform: rotate(140deg);
+}
+
+.Roof__second__right__edge-1 {
+  width: 165px;
+  top: -35px;
+  left: 113px;
+  border: solid 2px #9ec1c7;
+  border-color: #9ec1c7 transparent transparent transparent;
+  border-radius: 170%/49px 110px 0 0;
+  -webkit-transform: rotate(140deg);
+      -ms-transform: rotate(140deg);
+          transform: rotate(140deg);
+  -webkit-transform: rotateX(-180deg) rotateZ(-40deg);
+          transform: rotateX(-180deg) rotateZ(-40deg);
 }
 
 .Test {
   position: absolute;
   bottom: 172px;
-  left: 0;
+  left: -40px;
   width: 100%;
   height: 2px;
   background-color: red;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .Home-view {
