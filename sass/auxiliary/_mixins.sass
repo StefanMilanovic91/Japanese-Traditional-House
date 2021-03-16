@@ -10,11 +10,35 @@
 
 
 @mixin tile
-    width: 13px
-    height: 19px
-    display: block
-    background-color: rgb(110,123,131)
-    border-radius: 100% 0% 80% 80% / 100% 100% 50% 50%
-    transform: rotate(32deg)
-    border-right: 3px solid rgb(60,64,76)
-    border-bottom: 3px solid rgb(158,193,199)
+    position: absolute
+    width: 32px
+    height: 10rem
+    border: solid 3px $roof-column-tiles-color
+    border-color: $roof-column-tiles-color transparent transparent transparent
+    border-radius: 150%/115px 100px 0 0
+    transform: rotate(161deg)
+
+@mixin second-tile
+    position: absolute
+    width: 32px
+    height: 10rem
+    border: solid 3px $roof-column-tiles-color
+    border-color: $roof-column-tiles-color transparent transparent transparent
+    border-radius: 250%/40px 50px 0 0
+
+@mixin brick
+    position: absolute 
+    width: 2px
+    height: 5px
+    background-color: rgb(89,97,108)
+    z-index: 9999
+@mixin crossbar
+    position: absolute
+    width: 1px
+    background-color: rgb(64,28,4)
+
+@mixin column
+    position: absolute
+    width: 2px
+    background-color: $roof-column-tiles-color
+    z-index: 1
