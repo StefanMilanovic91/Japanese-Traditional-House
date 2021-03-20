@@ -8,6 +8,15 @@
     left: 50%
     transform: translateX(-50%)
 
+@mixin tile-shadow
+    position: absolute
+    transform: rotate(180deg)
+    background-color: rgba(0,0,0,.5)
+    width: 16px
+    height: 3px
+    border-radius: 50% / 100%
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
 
 @mixin tile
     position: absolute
@@ -22,7 +31,7 @@
     position: absolute
     width: 32px
     height: 10rem
-    border: solid 3px $roof-column-tiles-color
+    border: solid 2px $roof-column-tiles-color
     border-color: $roof-column-tiles-color transparent transparent transparent
     border-radius: 250%/40px 50px 0 0
 

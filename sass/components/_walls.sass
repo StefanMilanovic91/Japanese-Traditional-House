@@ -5,8 +5,194 @@
     transform: translateX(-50%)
     width: 41.5rem
     height: 14rem
-.Wall
+    &__shadow 
+        position: absolute
+        transform: rotateX(0deg)
+        top: -10px
+        left: 15px
+        width: 385px
+        height: 47px
+        background-color: rgba(0,0,0, 0.5)
+        &__part-1
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            width: 106%
+            height: 8px
+            background-color: rgb(0,0,0)
+        &__part-2
+            position: absolute
+            top: 8px
+            left: 50%
+            transform: translateX(-50%)
+            width: 104%
+            height: 4px
+            background-color: rgb(35,39,38)
+        &__part-3
+            position: absolute
+            top: 47px
+            left: 48px
+            width: 34px
+            height: 97px
+            background-color: rgba(0,0,0,.5)
+        &__part__4
+            position: absolute
+            top: 12px
+            left: 50%
+            transform: translateX(-50%)
+            width: 100%
+            height: 8px
+            background-color: rgb(0,0,0)
+            &__circle-1
+                position: absolute
+                top: 4px
+                left: 13px
+                width: 6px
+                height: 6px
+                border-radius: 50%
+                background-color: darken($walls-top-color, 9%)
+            &__circle-2
+                @extend .Walls__shadow__part__4__circle-1
+                left: 22px
+            &__circle-3
+                @extend .Walls__shadow__part__4__circle-1
+                left: 31px
+            &__circle-4
+                @extend .Walls__shadow__part__4__circle-1
+                left: 40px
+            &__circle-5
+                @extend .Walls__shadow__part__4__circle-1
+                left: 49px
+            &__circle-6
+                @extend .Walls__shadow__part__4__circle-1
+                left: 58px
+            &__circle-7
+                @extend .Walls__shadow__part__4__circle-1
+                left: 67px
+            &__circle-8
+                @extend .Walls__shadow__part__4__circle-1
+                left: 76px
+            &__circle-9
+                @extend .Walls__shadow__part__4__circle-1
+                left: 227px
+            &__circle-10
+                @extend .Walls__shadow__part__4__circle-1
+                left: 236px
+            &__circle-11
+                @extend .Walls__shadow__part__4__circle-1
+                left: 245px
+            &__circle-12
+                @extend .Walls__shadow__part__4__circle-1
+                left: 254px
+            &__circle-13
+                @extend .Walls__shadow__part__4__circle-1
+                left: 263px
+            &__circle-14
+                @extend .Walls__shadow__part__4__circle-1
+                left: 272px
+            &__circle-15
+                @extend .Walls__shadow__part__4__circle-1
+                left: 281px
+            &__circle-16
+                @extend .Walls__shadow__part__4__circle-1
+                left: 290px
+            &__circle-17
+                @extend .Walls__shadow__part__4__circle-1
+                left: 299px
+            &__circle-18
+                @extend .Walls__shadow__part__4__circle-1
+                left: 308px
+            &__circle-19
+                @extend .Walls__shadow__part__4__circle-1
+                left: 317px
+            &__circle-20
+                @extend .Walls__shadow__part__4__circle-1
+                left: 326px
+            &__circle-21
+                @extend .Walls__shadow__part__4__circle-1
+                left: 342px
+            &__circle-22
+                @extend .Walls__shadow__part__4__circle-1
+                left: 351px
+            &__circle-23
+                @extend .Walls__shadow__part__4__circle-1
+                left: 360px
+            &__circle-24
+                @extend .Walls__shadow__part__4__circle-1
+                left: 369px
+        &__tile-1
+            @include tile-shadow
+            width: 20px
+            height: 4px
+            top: 47px
+            left: 0px
+        &__tile-2
+            @include tile-shadow
+            width: 20px
+            height: 4px
+            top: 47px
+            left: 20px
+        &__tile-3
+            position: absolute
+            top: 47px
+            left: 40px
+            width: 8px
+            height: 4px
+            background-color: rgba(0,0,0,.5)
+            border-bottom-left-radius: 100%
+        &__tile-4
+            @include tile-shadow
+            width: 20px
+            height: 4px
+            top: 47px
+            left: 224px
+        &__tile-5
+            @include tile-shadow
+            width: 22px
+            height: 4px
+            top: 47px
+            left: 246px
+        &__tile-6
+            @include tile-shadow
+            width: 22px
+            height: 4px
+            top: 47px
+            left: 267px
+        &__tile-7
+            @include tile-shadow
+            width: 22px
+            height: 4px
+            top: 47px
+            left: 289px
+        &__tile-8
+            @include tile-shadow
+            width: 22px
+            height: 4px
+            top: 47px
+            left: 311px
+        &__tile-9
+            @include tile-shadow
+            width: 22px
+            height: 4px
+            top: 47px
+            left: 334px
+        &__tile-10
+            @include tile-shadow
+            width: 20px
+            height: 4px
+            top: 47px
+            left: 356px
+        &__tile-11
+            position: absolute
+            top: 47px
+            left: 377px
+            width: 8px
+            height: 4px
+            background-color: rgba(0,0,0,.5)
+            border-bottom-left-radius: 100%
 
+.Wall
     &__left
         position: absolute
         width: 5.4rem
@@ -29,6 +215,8 @@
                 background-color: $glass-color
                 border-right: 3px solid #75746f
                 border-top: 3px solid #75746f
+                &:nth-child(2)
+                    border-right: none
         &__horizontal__glasses
             position: absolute
             top: 0
@@ -57,6 +245,9 @@
             width: 8rem
             height: 2rem
             background-color: $walls-top-color
+
+
+
     &__right
         position: absolute
         left: 23.9rem
@@ -87,3 +278,5 @@
             left: initial
             right: 1.5rem
             width: 17rem
+
+    
