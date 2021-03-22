@@ -608,7 +608,8 @@ html {
 }
 
 .Walls__shadow__part__4__circle-21 {
-  left: 342px;
+  left: 343px;
+  width: 5px;
 }
 
 .Walls__shadow__part__4__circle-22 {
@@ -796,6 +797,35 @@ html {
   border-bottom-left-radius: 100%;
 }
 
+.Walls__shadow__timber-1, .Walls__shadow__timber-2, .Walls__shadow__timber-3, .Walls__shadow__timber-4, .Walls__shadow__timber-5, .Walls__shadow__timber-6 {
+  position: absolute;
+  width: 8px;
+  height: 13px;
+  background-color: black;
+  top: 12px;
+  left: -4px;
+}
+
+.Walls__shadow__timber-2 {
+  left: 48px;
+}
+
+.Walls__shadow__timber-3 {
+  left: 244px;
+}
+
+.Walls__shadow__timber-4 {
+  left: 289px;
+}
+
+.Walls__shadow__timber-5 {
+  left: 333px;
+}
+
+.Walls__shadow__timber-6 {
+  left: 381px;
+}
+
 .Wall__left {
   position: absolute;
   width: 5.4rem;
@@ -866,6 +896,17 @@ html {
   background-color: #784206;
 }
 
+.Wall__left__pillar:after, .Wall__right__pillar:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 6px;
+  height: 5px;
+  background-color: rgba(120, 66, 6, 0.5);
+  z-index: 2;
+}
+
 .Wall__left__top, .Wall__right__top {
   position: absolute;
   top: 0;
@@ -901,6 +942,17 @@ html {
 .Wall__right__pillar {
   left: initial;
   right: 1.5rem;
+}
+
+.Wall__right__pillar:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 6px;
+  height: 5px;
+  background-color: rgba(120, 66, 6, 0.5);
+  z-index: 2;
 }
 
 .Wall__right__top {
@@ -4609,6 +4661,27 @@ html {
   border-bottom-right-radius: 0;
   top: 31px;
   left: 128px;
+}
+
+.Roof__second__shadow__timber-1, .Roof__second__shadow__timber-2, .Roof__second__shadow__timber-3, .Roof__second__shadow__timber-4 {
+  position: absolute;
+  width: 8px;
+  height: 11px;
+  background-color: black;
+  top: 10px;
+  left: 0px;
+}
+
+.Roof__second__shadow__timber-2 {
+  left: 44px;
+}
+
+.Roof__second__shadow__timber-3 {
+  left: 92px;
+}
+
+.Roof__second__shadow__timber-4 {
+  left: 136px;
 }
 
 .Test, .Test1, .Test2 {

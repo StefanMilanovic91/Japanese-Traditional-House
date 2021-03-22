@@ -111,7 +111,8 @@
                 left: 326px
             &__circle-21
                 @extend .Walls__shadow__part__4__circle-1
-                left: 342px
+                left: 343px
+                width: 5px
             &__circle-22
                 @extend .Walls__shadow__part__4__circle-1
                 left: 351px
@@ -191,7 +192,28 @@
             height: 4px
             background-color: rgba(0,0,0,.5)
             border-bottom-left-radius: 100%
-
+        &__timber-1
+            position: absolute
+            width: 8px
+            height: 13px 
+            background-color: rgb(0,0,0)
+            top: 12px
+            left: -4px
+        &__timber-2
+            @extend .Walls__shadow__timber-1
+            left: 48px
+        &__timber-3
+            @extend .Walls__shadow__timber-1
+            left: 244px
+        &__timber-4
+            @extend .Walls__shadow__timber-1
+            left: 289px
+        &__timber-5
+            @extend .Walls__shadow__timber-1
+            left: 333px
+        &__timber-6
+            @extend .Walls__shadow__timber-1
+            left: 381px
 .Wall
     &__left
         position: absolute
@@ -238,6 +260,15 @@
             width: 1rem
             height: 100%
             background-color: rgb(120,66,6)
+            &:after
+                content: ''
+                position: absolute
+                top: 5px
+                right: 0
+                width: 6px
+                height: 5px
+                background-color: rgba(120,66,6, .5)
+                z-index: 2
         &__top
             position: absolute
             top: 0
@@ -273,6 +304,15 @@
             @extend .Wall__left__pillar
             left: initial
             right: 1.5rem
+            &:after
+                content: ''
+                position: absolute
+                top: 5px
+                left: 0px
+                width: 6px
+                height: 5px
+                background-color: rgba(120,66,6, .5)
+                z-index: 2
         &__top
             @extend .Wall__left__top
             left: initial
